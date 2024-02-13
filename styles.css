@@ -1,0 +1,14 @@
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    font-size: xx-large;
+    color: black;
+}
+
+.imgCarousel {
+    opacity: 0.7;
+}
