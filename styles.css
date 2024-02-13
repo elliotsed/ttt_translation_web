@@ -10,5 +10,9 @@
 }
 
 .imgCarousel {
-    opacity: 0.7;
+    opacity: 0.5;
+}
+
+.card {
+    background-color: #E2FBFF;
 }

@@ -2,87 +2,280 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/logotttrsz.png" height="70" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Company
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Blog</a></li>
-                  <li><a class="dropdown-item" href="#">About Us</a></li>
-                  <li><a class="dropdown-item" href="#">Contact us</a></li>
-                </ul>
-              </li>
+  <div class="container-fluid">
+
+    <!--Navigation bar-->
+    <nav class="navbar fixed-top bg-white navbar-expand-sm navbar-light" id="neubar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logotttrsz.png" height="70" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Carousel Start-->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="margin-top: 96px;">
+        <div class="carousel-item active">
+          <img src="images/co-travailleur.jpg" class="d-block w-100 imgCarousel" alt="...">
+          <div class="carousel-caption d-lg-none">
+            <p><span style="color: orange;">High Professional</span> <br /> Translation Services <br /> You Can Trust
+            </p>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="images/manwithlaptop.jpg" class="d-block w-100 imgCarousel" alt="...">
+          <div class="carousel-caption ">
+            <p><span style="color: orange;">Open Your Business</span> <br /> To The Whole World</p>
+          </div>
+
+        </div>
+        <div class="carousel-item ">
+          <img src="images/carousel3.jpg" class="d-block w-100 imgCarousel" alt="...">
+          <div class="carousel-caption d-lg-none">
+            <p><span style="color: orange;">Work Easily</span> <br /> With Our Professional <br /> Translation Agency
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Services offered and type of translation-->
+    <div class="row mt-5">
+      <h3 class="mb-3">We offer a Wide Range of Translation Services</h3>
+
+      <div class="col-lg-6 mt-2">
+        <p>
+          ProLingua is a translation company that has been providing high quality, professional translation services for
+          over 15 years. Check out our client list and read some client testimonials. Many customers feel that ProLingua
+          is the best translation company for their requirements.
+        </p>
+      </div>
+      <div class="col-lg-6 mt-2">
+        <p>
+          ProLingua stands for Global Translation Services. We have earned our name by being an international
+          translation agency with global reach. With translators in over 100 countries and support of over 60 languages,
+          we have the language expertise you need in every part of the world.
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Documents Translation</h5>
+            <p class="card-text">
+            <ul class="list-group">
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Financial documents translation</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> commercial documents
+                translations</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> legal documents
+                translations</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Other types of translations</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+        <div class="card h-100">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Localization Services</h5>
+            <p class="card-text">
+            <ul class="list-group">
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Penetrate foreign markets</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Reach new clients or
+                consumer groups</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Increase international sales</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+        <div class="card h-100">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Transcription Services</h5>
+            <ul class="list-group">
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Accurate and efficient conversion of audio files into written text</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Facilitation of access to the content</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Increase international sales</li>
             </ul>
           </div>
         </div>
-      </nav>
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mt-2">
+        <div class="card h-100">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Subtitling</h5>
+            <ul class="list-group">
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Accurate and timely provision of subtitles for video content</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Enhancement of accessibility for diverse audiences</li>
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Improved comprehension of the content</li>
+            </ul>
+          </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/co-travailleur.jpg" class="d-block w-100 imgCarousel" alt="...">
-                <div class="carousel-caption ">
-                    <p><span style="color: orange;">High Professional</span> <br/> Translation Services <br/> You Can Trust</p>
-                </div>
-                
-            </div>
-            <div class="carousel-item">
-                <img src="images/manwithlaptop.jpg" class="d-block w-100 imgCarousel" alt="...">
-                <div class="carousel-caption ">
-                    <p><span style="color: orange;">Open Your Business</span> <br/> To The Whole World</p>
-                </div>
+      </div>
 
-            </div>
 
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+
+    <!--Section Why Choose US-->
+    <div class="row mt-5">
+      <div class="col-lg-6">
+        <img class="w-100" src="images/negociationMade.jpg"
+          alt="Images représentant des hommes d'affaire se serrant la main">
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="">
+          <h1 class="text-center">Why Choose Us?</h1>
+          <h2 class="text-center mt-5" style="font-size: 30px;"><span><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                height="50" viewBox="0 0 32 32">
+                <path fill="currentColor"
+                  d="m29.482 8.624l-10-5.5a1 1 0 0 0-.964 0l-10 5.5a1 1 0 0 0 0 1.752L18 15.591V26.31l-3.036-1.67L14 26.391l4.518 2.485a.998.998 0 0 0 .964 0l10-5.5A1 1 0 0 0 30 22.5v-13a1 1 0 0 0-.518-.876M19 5.142L26.925 9.5L19 13.858L11.075 9.5Zm9 16.767l-8 4.4V15.59l8-4.4Z" />
+                <path fill="currentColor" d="M10 16H2v-2h8zm2 8H4v-2h8zm2-4H6v-2h8z" />
+              </svg></span> Fast Delivery</h2>
+          <p class="text-center">Your documents are promptly translated and returned to you, maintaining efficiency
+            without compromising quality.</p>
+
+          <h2 class="text-center mt-5" style="font-size: 30px;">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12.408.966H9.375m1.517 0v2.6M5.07 2.749L3.997 3.822L2.925 4.894m1.072-1.072L5.836 5.66M1.142 9.2v3.033m0-1.517h2.6m-.817 5.822l1.072 1.073l1.073 1.072m-1.073-1.072l1.839-1.839M18.858 4.894l-1.072-1.072l-1.073-1.073m1.073 1.073L15.947 5.66m-6.572 4.407a1.517 1.517 0 1 0 0-3.034a1.517 1.517 0 0 0 0 3.034" />
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.748 8.683a7.15 7.15 0 1 0-8.89 8.884m3 5.467h8.458a2.533 2.533 0 0 0 2.542-2.523v-6.606a2.189 2.189 0 0 0-1.9-2.211a2.1 2.1 0 0 0-1.152 3.969a5.994 5.994 0 0 0 0 4.428a4.674 4.674 0 0 0-7.338-1.265" />
+                  <path d="M11.633 13.625a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75" />
+                </g>
+              </svg></span> Professional Translations
+          </h2>
+          <p class="text-center">Experience the pinnacle of linguistic excellence with our professional translation
+            services, where every word is meticulously crafted by expert linguists, ensuring flawless communication
+            across languages.</p>
+
+          <h2 class="text-center mt-5" style="font-size: 30px;">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="m23.5 17l-5 5l-3.5-3.5l1.5-1.5l2 2l3.5-3.5zm-3-6a2.5 2.5 0 0 1 2.5 2.5c0 .31-.06.61-.16.89C21.8 13.5 20.46 13 19 13c-3.31 0-6 2.69-6 6v.54c-.36-1.04-1.35-1.74-2.5-1.74c-1.5 0-2.7 1.2-2.7 2.7V22H4c-1.1 0-2-.9-2-2v-3.8h1.5c1.5 0 2.7-1.2 2.7-2.7S5 10.8 3.5 10.8H2V7a2 2 0 0 1 2-2h4V3.5C8 2.12 9.12.998 10.5.998S13 2.12 13 3.5V5h4a2 2 0 0 1 2 2v4z" />
+              </svg></span> Flexible Translation Solutions
+          </h2>
+          <p class="text-center">Our translation service offers unparalleled flexibility, accommodating projects of all
+            sizes and types to meet your specific requirements. From short documents to large-scale projects, we deliver
+            customized translation solutions tailored to your needs.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
