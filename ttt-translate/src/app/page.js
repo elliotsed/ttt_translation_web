@@ -209,7 +209,7 @@ export default function Home() {
       </div>
       <hr className="my-5"></hr>
 
-      {/* Section Why Choose US */}
+      {/*Section Why Choose US*/}
       <div className="row mt-5" id="whyUs">
         <div className="col-lg-6 col-md-6 d-none d-md-block">
           <img className="w-100 h-100 img-fluid" src="/negociationMade.jpg"
@@ -308,6 +308,180 @@ export default function Home() {
 
       </div>
       <hr className="my-5"></hr>
+
+      {/*Mot du CEO*/}
+      <div className="row mt-5" id="ceo">
+        <img src="/langLG.jpg" alt="" className="img-fluid" />
+
+        <div className="mt-5 d-flex justify-content-center">
+          <div className="card w-75">
+            <div className="card-body">
+              <blockquote className="blockquote blockquote-custom bg-white px-3 pt-4">
+                <div className="blockquote-custom-icon bg-info shadow-1-strong">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path fill="white"
+                      d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054q.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992a4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054q.094-.558.31-.992q.217-.434.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992a4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                  </svg>
+                </div>
+                <p className="mb-0 mt-2 font-italic">
+                  &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo&quot;
+                </p>
+                <footer className="blockquote-footer pt-4 mt-4 border-top">
+                  Léon Bichat |
+                  <cite title="Source Title">Founder & CEO</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr className="my-5"></hr>
+
+      {/*Contact US Now*/}
+      <section className="mb-4">
+        <div className="row" id="contact">
+          <div className="col-md-6">
+            <img src="/contactUs.jpg" className="w-100" alt="" style={{ borderRadius: "10px" }} />
+            <h1 className="text-center mt-3">Do you have any questions?</h1>
+            <p className="text-center mx-auto mb-5">Please do not hesitate to contact us
+              directly. <br />
+              Our team will come back to you within a matter of hours to help you.</p>
+          </div>
+
+          <div className="col-md-6 mb-md-0 mb-5">
+
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="form-outline mb-4">
+                    <input type="text" id="name" name="name" className="form-control" />
+                    <label className="form-label" for="name">Your name</label>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div className="form-outline mb-4">
+                    <input type="email" id="email" name="email" className="form-control" />
+                    <label className="form-label" for="email">Your email</label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="form-outline mb-4">
+                    <input type="text" id="subject" name="subject" className="form-control" />
+                    <label className="form-label" for="subject">Subject</label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="form-outline mb-4">
+                    <textarea className="form-control" id="message" name="message" rows="4"></textarea>
+                    <label className="form-label" for="message">Your message</label>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="validateForm()" className="btn text-white" style={{ backgroundColor: "#45526e" }}>Submit</button>
+              <div className="status"></div>
+            </form>
+          </div>
+
+
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer class="text-center text-lg-start text-white" style={{backgroundColor:"#45526e", borderRadius:"10px"}}>
+        <div class="container-fluid p-4 pb-0">
+          <section class="">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  TTT English Mission Center </h6>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo corporis earum animi blanditiis et
+                  dolor tenetur neque consectetur cumque incidunt id ipsum culpa inventore maiores, enim provident?
+                  Quaerat, explicabo libero?
+                </p>
+              </div>
+
+              <hr className="w-100 clearfix d-md-none" />
+
+              <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <g fill="white">
+                    <path
+                      d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06z" />
+                    <path
+                      d="m12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086z" />
+                  </g>
+                </svg> Calavi, Benin, Africa</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M424 80H88a56.06 56.06 0 0 0-56 56v240a56.06 56.06 0 0 0 56 56h336a56.06 56.06 0 0 0 56-56V136a56.06 56.06 0 0 0-56-56m-14.18 92.63l-144 112a16 16 0 0 1-19.64 0l-144-112a16 16 0 1 1 19.64-25.26L256 251.73l134.18-104.36a16 16 0 0 1 19.64 25.26" />
+                </svg> tttmission@gmail.com</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path fill="white"
+                    d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863q-2.5-2.5-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3" />
+                </svg> + 229 69109929</p>
+              </div>
+            </div>
+          </section>
+
+          <hr className="my-3"></hr>
+
+          <section className="p-3 pt-0">
+            <div className="row d-flex align-items-center">
+              <div className="col-md-7 col-lg-8 text-center text-md-start">
+                <div className="p-3">
+                  © 2024 Copyright:
+                  <a className="text-white" style={{textDecoration: "none"}} target="_blank"
+                    href="https://tttmission.vercel.app">TTT English Mission</a>
+                </div>
+              </div>
+
+              <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                {/* Facebook */}
+                <a className="btn btn-outline-light btn-floating m-1" role="button"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path fill="white"
+                    d="M14.2 2.875A4.625 4.625 0 0 0 9.575 7.5v2.575H7.1c-.124 0-.225.1-.225.225v3.4c0 .124.1.225.225.225h2.475V20.9c0 .124.1.225.225.225h3.4c.124 0 .225-.1.225-.225v-6.975h2.497c.103 0 .193-.07.218-.17l.85-3.4a.225.225 0 0 0-.218-.28h-3.347V7.5a.775.775 0 0 1 .775-.775h2.6c.124 0 .225-.1.225-.225V3.1c0-.124-.1-.225-.225-.225z" />
+                </svg></a>
+
+                {/* Twitter */}
+                <a className="btn btn-outline-light btn-floating m-1" role="button"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path fill="white"
+                    d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                </svg></a>
+
+                {/* Google */}
+                <a className="btn btn-outline-light btn-floating m-1" role="button"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path fill="white"
+                    d="M6 12a6 6 0 0 0 11.659 2H12v-4h9.805v4H21.8c-.927 4.564-4.962 8-9.8 8c-5.523 0-10-4.477-10-10S6.477 2 12 2a9.99 9.99 0 0 1 8.282 4.393l-3.278 2.295A6 6 0 0 0 6 12" />
+                </svg></a>
+
+                {/* Instagram */}
+                <a className="btn btn-outline-light btn-floating m-1" role="button"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path fill="white"
+                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                </svg></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
+
     </div>
   );
 }
