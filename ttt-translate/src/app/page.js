@@ -67,7 +67,7 @@ export default function Home() {
 
           </div>
           <div className="carousel-item">
-            <img src="/manwithlaptop.jpg" class="d-block w-100 imgCarousel" alt="..." />
+            <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark fw-bold carousel-caption ">
               <p><span style={{ color: "orange" }}>Open Your Business</span> <br /> To The Whole World</p>
@@ -75,7 +75,7 @@ export default function Home() {
 
           </div>
           <div className="carousel-item ">
-            <img src="/carousel3.jpg" class="d-block w-100 imgCarousel" alt="..." />
+            <img src="/carousel3.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark fw-bold carousel-caption">
               <p><span style={{ color: "orange" }}>Work Easily</span> <br /> With Our Professional <br /> Translation Agency
@@ -353,7 +353,7 @@ export default function Home() {
 
           <div className="col-md-6 mb-md-0 mb-5">
 
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form id="contact-form" name="contact-form" action="/api/sendEmail" method="POST">
               <div className="row">
                 <div className="col-md-6">
                   <div className="form-outline mb-4">
@@ -388,7 +388,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <button onclick="validateForm()" className="btn text-white" style={{ backgroundColor: "#45526e" }}>Submit</button>
+              <button type="submit" className="btn text-white" style={{ backgroundColor: "#45526e" }}>Submit</button>
               <div className="status"></div>
             </form>
           </div>
@@ -398,12 +398,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer class="text-center text-lg-start text-white" style={{backgroundColor:"#45526e", borderRadius:"10px"}}>
-        <div class="container-fluid p-4 pb-0">
-          <section class="">
-            <div class="row">
-              <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
+      <footer className="text-center text-lg-start text-white" style={{backgroundColor:"#45526e", borderRadius:"10px"}}>
+        <div className="container-fluid p-4 pb-0">
+          <section className="">
+            <div className="row">
+              <div className="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                <h6 className="text-uppercase mb-4 font-weight-bold">
                   TTT English Mission Center </h6>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo corporis earum animi blanditiis et
@@ -414,8 +414,8 @@ export default function Home() {
 
               <hr className="w-100 clearfix d-md-none" />
 
-              <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <div className="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                   <g fill="white">
                     <path
