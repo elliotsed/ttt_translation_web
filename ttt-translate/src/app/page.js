@@ -1,9 +1,4 @@
-"use client";
 import Image from "next/image";
-import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 
 export default function Home() {
   return (
@@ -46,17 +41,10 @@ export default function Home() {
       </nav>
 
       {/*Carousel Start*/}
-      <div id="carouselExampleSlidesOnly" data-bs-ride="carousel" className="carousel slide carousel-fade">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
+      <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide">
+
         <div className="carousel-inner" style={{ marginTop: "96px" }}>
-          <div className="carousel-item active">
+          <div className="carousel-item active" data-bs-interval="5000">
             <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark fw-bold carousel-caption">
@@ -65,7 +53,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" data-bs-interval="5000">
             <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark fw-bold carousel-caption ">
@@ -73,7 +61,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="carousel-item ">
+          <div className="carousel-item " data-bs-interval="5000">
             <img src="/carousel3.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark fw-bold carousel-caption">
@@ -84,6 +72,16 @@ export default function Home() {
           </div>
 
         </div>
+
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+
       </div>
 
       {/* Services offered and type of translation */}
@@ -107,32 +105,30 @@ export default function Home() {
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Documents Translations</h5>
-              <p className="card-text">
-                <ul className="list-group">
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Financial documents translations</li>
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Commercial, Marketing & Business documents
-                    translations</li>
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> legal documents
-                    translations</li>
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Christian and Bible content translations conducted by Spirit-filled Christians</li>
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Other types of translations</li>
-                </ul>
-              </p>
+              <ul className="list-group">
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Financial documents translations</li>
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Commercial, Marketing & Business documents
+                  translations</li>
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> legal documents
+                  translations</li>
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Christian and Bible content translations conducted by Spirit-filled Christians</li>
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Other types of translations</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -140,23 +136,21 @@ export default function Home() {
           <div className="card h-100">
             <div className="card-body">
               <h5 className="card-title">Localization Services</h5>
-              <p className="card-text">
-                <ul className="list-group">
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Penetrate foreign markets</li>
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Reach new clients or
-                    consumer groups</li>
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Increase international sales</li>
-                </ul>
-              </p>
+              <ul className="list-group">
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Penetrate foreign markets</li>
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Reach new clients or
+                  consumer groups</li>
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Increase international sales</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -164,22 +158,20 @@ export default function Home() {
           <div className="card h-100">
             <div className="card-body">
               <h5 className="card-title">Transcription Services</h5>
-              <p className="card-text">
-                <ul className="list-group">
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Accurate and efficient conversion of audio files into written text</li>
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Facilitation of access to the content</li>
-                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                  </svg> Increase international sales</li>
-                </ul>
-              </p>
+              <ul className="list-group">
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Accurate and efficient conversion of audio files into written text</li>
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Facilitation of access to the content</li>
+                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20">
+                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                </svg> Increase international sales</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -191,11 +183,11 @@ export default function Home() {
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Accurate and timely provision of subtitles for video content</li>
+                </svg> Accurate and timely provision of subtitles htmlFor video content</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Enhancement of accessibility for diverse audiences</li>
+                </svg> Enhancement of accessibility htmlFor diverse audiences</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
@@ -230,10 +222,10 @@ export default function Home() {
 
             <h2 className="text-center mt-5" style={{ fontSize: "30px" }}>
               <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                <g fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round"
+                <g fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path strokeLinecap="round" strokeLinejoin="round"
                     d="M12.408.966H9.375m1.517 0v2.6M5.07 2.749L3.997 3.822L2.925 4.894m1.072-1.072L5.836 5.66M1.142 9.2v3.033m0-1.517h2.6m-.817 5.822l1.072 1.073l1.073 1.072m-1.073-1.072l1.839-1.839M18.858 4.894l-1.072-1.072l-1.073-1.073m1.073 1.073L15.947 5.66m-6.572 4.407a1.517 1.517 0 1 0 0-3.034a1.517 1.517 0 0 0 0 3.034" />
-                  <path stroke-linecap="round" stroke-linejoin="round"
+                  <path strokeLinecap="round" strokeLinejoin="round"
                     d="M17.748 8.683a7.15 7.15 0 1 0-8.89 8.884m3 5.467h8.458a2.533 2.533 0 0 0 2.542-2.523v-6.606a2.189 2.189 0 0 0-1.9-2.211a2.1 2.1 0 0 0-1.152 3.969a5.994 5.994 0 0 0 0 4.428a4.674 4.674 0 0 0-7.338-1.265" />
                   <path d="M11.633 13.625a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75" />
                 </g>
@@ -280,10 +272,10 @@ export default function Home() {
           <div className="text-center mt-5">
             <h2>
               <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                <g fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round"
+                <g fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path strokeLinecap="round" strokeLinejoin="round"
                     d="M12.408.966H9.375m1.517 0v2.6M5.07 2.749L3.997 3.822L2.925 4.894m1.072-1.072L5.836 5.66M1.142 9.2v3.033m0-1.517h2.6m-.817 5.822l1.072 1.073l1.073 1.072m-1.073-1.072l1.839-1.839M18.858 4.894l-1.072-1.072l-1.073-1.073m1.073 1.073L15.947 5.66m-6.572 4.407a1.517 1.517 0 1 0 0-3.034a1.517 1.517 0 0 0 0 3.034" />
-                  <path stroke-linecap="round" stroke-linejoin="round"
+                  <path strokeLinecap="round" strokeLinejoin="round"
                     d="M17.748 8.683a7.15 7.15 0 1 0-8.89 8.884m3 5.467h8.458a2.533 2.533 0 0 0 2.542-2.523v-6.606a2.189 2.189 0 0 0-1.9-2.211a2.1 2.1 0 0 0-1.152 3.969a5.994 5.994 0 0 0 0 4.428a4.674 4.674 0 0 0-7.338-1.265" />
                   <path d="M11.633 13.625a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75" />
                 </g>
@@ -359,14 +351,14 @@ export default function Home() {
                 <div className="col-md-6">
                   <div className="form-outline mb-4">
                     <input type="text" id="name" name="name" className="form-control" />
-                    <label className="form-label" for="name">Your name</label>
+                    <label className="form-label" htmlFor="name">Your name</label>
                   </div>
                 </div>
 
                 <div className="col-md-6">
                   <div className="form-outline mb-4">
                     <input type="email" id="email" name="email" className="form-control" />
-                    <label className="form-label" for="email">Your email</label>
+                    <label className="form-label" htmlFor="email">Your email</label>
                   </div>
                 </div>
               </div>
@@ -375,7 +367,7 @@ export default function Home() {
                 <div className="col-md-12">
                   <div className="form-outline mb-4">
                     <input type="text" id="subject" name="subject" className="form-control" />
-                    <label className="form-label" for="subject">Subject</label>
+                    <label className="form-label" htmlFor="subject">Subject</label>
                   </div>
                 </div>
               </div>
@@ -384,7 +376,7 @@ export default function Home() {
                 <div className="col-md-12">
                   <div className="form-outline mb-4">
                     <textarea className="form-control" id="message" name="message" rows="4"></textarea>
-                    <label className="form-label" for="message">Your message</label>
+                    <label className="form-label" htmlFor="message">Your message</label>
                   </div>
                 </div>
               </div>

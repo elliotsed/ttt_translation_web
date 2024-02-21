@@ -1,6 +1,6 @@
-import Head from 'next/head';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
-
+import BootstrapClient from './components/BootstrapClient';
 
 export const metadata = {
   title: "TTT English Mission - Experts in Translation, Transcription, and Subtitling",
@@ -9,13 +9,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <Head>
-        <link rel="icon" href="/logotttrsz.png" />
-      </Head>
-      <html lang="en">
-        <body className="custom-font">{children}</body>
-      </html>
-    </>
+    <html lang="en">
+      <body className="custom-font">
+        {children}
+        <BootstrapClient />
+      </body>
+
+    </html>
   );
 }
