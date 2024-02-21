@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import "./globals.css";
 
 
@@ -8,8 +9,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="custom-font">{children}</body>
-    </html>
+    <>
+      <Head>
+        <link rel="icon" href="/logotttrsz.png" />
+      </Head>
+      <html lang="en">
+        <body className="custom-font">{children}</body>
+      </html>
+    </>
   );
 }

@@ -398,7 +398,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center text-lg-start text-white" style={{backgroundColor:"#45526e", borderRadius:"10px"}}>
+      <footer className="text-center text-lg-start text-white" style={{ backgroundColor: "#45526e", borderRadius: "10px" }}>
         <div className="container-fluid p-4 pb-0">
           <section className="">
             <div className="row">
@@ -443,7 +443,7 @@ export default function Home() {
               <div className="col-md-7 col-lg-8 text-center text-md-start">
                 <div className="p-3">
                   © 2024 Copyright:
-                  <a className="text-white" style={{textDecoration: "none"}} target="_blank"
+                  <a className="text-white" style={{ textDecoration: "none" }} target="_blank"
                     href="https://tttmission.vercel.app">TTT English Mission</a>
                 </div>
               </div>
