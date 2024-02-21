@@ -7,7 +7,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default function Home() {
   return (
-
     <div className="container-fluid">
       {/* Navigation bar */}
       <nav className="navbar fixed-top bg-white navbar-expand-sm navbar-light" id="neubar">
@@ -165,20 +164,22 @@ export default function Home() {
           <div className="card h-100">
             <div className="card-body">
               <h5 className="card-title">Transcription Services</h5>
-              <ul className="list-group">
-                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                  viewBox="0 0 20 20">
-                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Accurate and efficient conversion of audio files into written text</li>
-                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                  viewBox="0 0 20 20">
-                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Facilitation of access to the content</li>
-                <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                  viewBox="0 0 20 20">
-                  <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Increase international sales</li>
-              </ul>
+              <p className="card-text">
+                <ul className="list-group">
+                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20">
+                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                  </svg> Accurate and efficient conversion of audio files into written text</li>
+                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20">
+                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                  </svg> Facilitation of access to the content</li>
+                  <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20">
+                    <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                  </svg> Increase international sales</li>
+                </ul>
+              </p>
             </div>
           </div>
         </div>
