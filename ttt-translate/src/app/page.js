@@ -47,8 +47,13 @@ export default function Home() {
           <div className="carousel-item active" data-bs-interval="5000">
             <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-            <div className="text-dark fw-bold carousel-caption">
+            <div className="text-dark fw-bold d-none d-md-block carousel-caption">
               <p><span style={{ color: "orange" }}>High Professional</span> <br /> Translation Services <br /> You Can Trust
+              </p>
+            </div>
+
+            <div className="text-dark d-md-none fw-bold carousel-caption">
+              <p><span style={{ color: "orange" }}>High Professional</span> <br /> Translation Services
               </p>
             </div>
 
@@ -56,16 +61,25 @@ export default function Home() {
           <div className="carousel-item" data-bs-interval="5000">
             <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-            <div className="text-dark fw-bold carousel-caption ">
+            <div className="text-dark d-none d-md-block fw-bold carousel-caption ">
               <p><span style={{ color: "orange" }}>Open Your Business</span> <br /> To The Whole World</p>
+            </div>
+
+            <div className="text-dark d-md-none fw-bold carousel-caption ">
+              <p><span style={{ color: "orange" }}>Open Your Business</span> <br /> To The World</p>
             </div>
 
           </div>
           <div className="carousel-item " data-bs-interval="5000">
             <img src="/carousel3.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-            <div className="text-dark fw-bold carousel-caption">
+            <div className="text-dark d-none d-md-block fw-bold carousel-caption">
               <p><span style={{ color: "orange" }}>Work Easily</span> <br /> With Our Professional <br /> Translation Agency
+              </p>
+            </div>
+
+            <div className="text-dark d-md-none fw-bold carousel-caption">
+              <p><span style={{ color: "orange" }}>Work Easily</span> <br /> With Our Agency
               </p>
             </div>
 
@@ -210,7 +224,7 @@ export default function Home() {
         </div>
         <div className="col-lg-6 col-md-6 d-none d-md-block d-flex justify-content-center align-items-center mt-5">
           <div className="align-items-center">
-            <h1 className="text-center">Why Choose Us?</h1>
+            <h1 className="text-center">Why Choose US?</h1>
             <h2 className="text-center mt-5" style={{ fontSize: "30px" }}><span><svg xmlns="http://www.w3.org/2000/svg" width="50"
               height="50" viewBox="0 0 32 32">
               <path fill="currentColor"
@@ -255,7 +269,7 @@ export default function Home() {
               alt="Images représentant des hommes d'affaire se serrant la main" />
 
             <div className="position-absolute top-50 start-50 translate-middle">
-              <h1 className="text-center text-dark" style={{ fontSize: "40px" }}>Why Choose Us?</h1>
+              <h1 className="text-center text-dark fw-bold" style={{ fontSize: "40px" }}>Why Choose US?</h1>
             </div>
           </div>
 
