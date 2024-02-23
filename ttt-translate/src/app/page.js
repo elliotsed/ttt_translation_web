@@ -269,7 +269,7 @@ export default function Home() {
               alt="Images représentant des hommes d'affaire se serrant la main" />
 
             <div className="position-absolute top-50 start-50 translate-middle">
-              <h1 className="text-center text-dark fw-bold" style={{ fontSize: "40px" }}>Why Choose US?</h1>
+              <h2 className="text-center text-dark fw-bold" style={{ fontSize: "40px" }}>Why Choose US?</h2>
             </div>
           </div>
 
