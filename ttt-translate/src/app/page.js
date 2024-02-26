@@ -107,15 +107,12 @@ export default function Home() {
 
         <div className="col-lg-6 col-md-6 mt-2">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quod. Mollitia itaque incidunt porro
-            similique id. Architecto, explicabo quos. Doloremque inventore neque consequatur est consectetur illo esse
-            nulla dolore. Omnis!
+            Our team of professional translators offers a comprehensive range of translation services to meet all your needs. Whether you have financial, commercial, marketing, legal, or religious documents to translate, we are here to help.
           </p>
         </div>
         <div className="col-lg-6 col-md-6 mt-2">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id voluptas vero aliquid ducimus esse similique?
-            Saepe, nesciunt at. A animi quos quae dignissimos non reprehenderit quasi similique porro odio perspiciatis?
+            We also specialize in subtitling services, ensuring accurate and timely provision of subtitles for video content. Our goal is to enhance accessibility for diverse audiences and improve overall comprehension of the content.
           </p>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2" id="services">
@@ -323,9 +320,9 @@ export default function Home() {
       <div className="row mt-5" id="partner">
         <h1 className="text-center">Global Companies That Work With US</h1>
         <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
-              <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
-            </a>
+          <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
+            <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
+          </a>
         </div>
         <div className="col-lg-3 col-md-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.primefocustechnologies.com/" target="blank">
@@ -352,18 +349,18 @@ export default function Home() {
             <img src="/viax_corporate_language_solutions_logo.jpeg" className="d-block w-75" alt="..." />
           </a>
         </div>
-      
+
         <div className="col-lg-3 col-md-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.somyatrans.com/" target="blank">
             <img src="/somya.png" className="d-block w-75" alt="..." />
           </a>
         </div>
-         <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.verztec.com/index.php/us/" target="blank">
             <img src="/Verztec.jpg" className="d-block w-75" alt="..." />
           </a>
         </div>
-        
+
         <div className="col-lg-3 col-md-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.transcriptionstar.com/" target="blank">
             <img src="/transstar.jpeg" className="d-block w-75" alt="..." />
@@ -476,9 +473,7 @@ export default function Home() {
                 <h6 className="text-uppercase mb-4 font-weight-bold">
                   TTT English Mission Center </h6>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo corporis earum animi blanditiis et
-                  dolor tenetur neque consectetur cumque incidunt id ipsum culpa inventore maiores, enim provident?
-                  Quaerat, explicabo libero?
+                  Our mission is to provide high-quality translation and language services to clients worldwide. With a focus on accuracy, professionalism, and customer satisfaction, we strive to exceed your expectations in every project.
                 </p>
               </div>
 
