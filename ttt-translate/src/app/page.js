@@ -29,6 +29,9 @@ export default function Home() {
                 <a className="nav-link mx-2" href="#whyUs">Why US</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link mx-2" href="#partner">Partners</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link mx-2" href="#ceo">CEO</a>
               </li>
               <li className="nav-item">
