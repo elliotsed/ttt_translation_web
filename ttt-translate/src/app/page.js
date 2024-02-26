@@ -48,12 +48,12 @@ export default function Home() {
             <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark fw-bold d-none d-md-block carousel-caption">
-              <p><span style={{ color: "orange" }}>High Professional</span> <br /> Translation Services <br /> You Can Trust
+              <p><span style={{ color: "orange" }}>Highly Professional</span> <br /> Translation Services <br /> You Can Trust
               </p>
             </div>
 
             <div className="text-dark d-md-none fw-bold carousel-caption">
-              <p><span style={{ color: "orange" }}>High Professional</span> <br /> Translation Services
+              <p><span style={{ color: "orange" }}>Highly Professional</span> <br /> Translation Services
               </p>
             </div>
 
@@ -315,6 +315,66 @@ export default function Home() {
 
       </div>
       <hr className="my-5"></hr>
+
+      {/*Global companies that trust us*/}
+      <div className="row mt-5" id="partner">
+        <h1 className="text-center">Global Companies That Work With US</h1>
+        <div className="col-lg-3 col-md-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
+              <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
+            </a>
+        </div>
+        <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://www.primefocustechnologies.com/" target="blank">
+            <img src="/PFT (2)_0.jpg" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://www.productionhub.com/profile/christian-dubbing-studio" target="blank">
+            <img src="/cds.jpeg" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://thetranslationgate.com/" target="blank">
+            <img src="/tgate.webp" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://www.captioningstar.com/" target="blank">
+            <img src="/captioningstar_logo.jpeg" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://viax-translations.com/" target="blank">
+            <img src="/viax_corporate_language_solutions_logo.jpeg" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+      
+        <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://www.somyatrans.com/" target="blank">
+            <img src="/somya.png" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+         <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://www.verztec.com/index.php/us/" target="blank">
+            <img src="/Verztec.jpg" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        
+        <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://www.transcriptionstar.com/" target="blank">
+            <img src="/transstar.jpeg" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        <div className="col-lg-3 col-md-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://lexico-translations.com/home-2/" target="blank">
+            <img src="/lexico.png" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+      </div>
+      <hr className="my-5"></hr>
+
+
 
       {/*Mot du CEO*/}
       <div className="row mt-5" id="ceo">
