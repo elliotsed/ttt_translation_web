@@ -1,6 +1,8 @@
 import Image from "next/image";
+import initTranslations from "../i18n";
 
-export default function Home() {
+export default async function Home({params: {locale}}) {
+  const {t} = await initTranslations(locale, ["home"]);
   return (
     <div className="container-fluid">
       {/* Navigation bar */}
@@ -23,7 +25,7 @@ export default function Home() {
           <div className=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav ms-auto ">
               <li className="nav-item">
-                <a className="nav-link mx-2" aria-current="page" href="#services">Services</a>
+                <a className="nav-link mx-2" aria-current="page" href="#services">{t("nav1")}</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link mx-2" href="#whyUs">Why US</a>
