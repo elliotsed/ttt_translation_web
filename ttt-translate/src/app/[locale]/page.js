@@ -106,7 +106,7 @@ export default async function Home({ params: { locale } }) {
 
         <div className="col-lg-6 col-md-6 mt-2">
           <p>
-            {t("serviceP1")}.
+            {t("seviceP1")}.
           </p>
         </div>
         <div className="col-lg-6 col-md-6 mt-2">
