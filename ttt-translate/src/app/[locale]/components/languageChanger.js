@@ -37,7 +37,7 @@ export default function LanguageChanger() {
     };
 
     return (
-        <select onChange={handleChange} value={currentLocale}>
+        <select class="form-select" aria-label="Default select example" onChange={handleChange} value={currentLocale}>
             <option value="en">English</option>
             <option value="fr">Français</option>
         </select>
