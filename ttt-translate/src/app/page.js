@@ -46,6 +46,8 @@ export default function Home() {
         </div>
       </nav>
 
+     
+
       {/*Carousel Start*/}
       <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide">
 
@@ -104,6 +106,9 @@ export default function Home() {
 
       </div>
 
+      <div className="mt-3 w-50 d-md-none d-lg-none">
+        <LanguageChanger />
+      </div>
 
       {/* Services offered and type of translation */}
       <div className="row mt-5">

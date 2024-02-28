@@ -113,6 +113,10 @@ export default async function Home({ params: { locale } }) {
 
         </div>
 
+        <div className="mt-3 w-50 d-md-none d-lg-none">
+          <LanguageChanger />
+        </div>
+
         {/* Services offered and type of translation */}
         <div className="row mt-5">
           <h1 className="mb-3">{t("serviceH")}</h1>
