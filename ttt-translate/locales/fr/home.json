@@ -1,5 +1,10 @@
 {
     "ceoTitle": "Fondateur et PDG",
+    "formLabel1": "Votre nom",
+    "formLabel2": "Votre email",
+    "formLabel3": "Sujet",
+    "formLabel4": "Votre message",
+    "formButton": "Soumettre",
     "carousel1": "Services de Traduction",
     "carousel1suite": "Hautement Professionnels",
     "carousel1suite2": "Vous Pouvez Faire Confiance",

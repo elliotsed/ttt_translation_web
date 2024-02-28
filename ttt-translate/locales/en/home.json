@@ -1,5 +1,10 @@
 {
     "ceoTitle": "Founder & CEO",
+    "formLabel1": "Your name",
+    "formLabel2": "Your email",
+    "formLabel3": "Subject",
+    "formLabel4": "Your message",
+    "formButton": "Submit",
     "carousel1": "Highly Professional",
     "carousel1suite": "Translation Services",
     "carousel1suite2": "You Can Trust",

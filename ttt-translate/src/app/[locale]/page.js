@@ -412,14 +412,14 @@ export default async function Home({ params: { locale } }) {
                 <div className="col-md-6">
                   <div className="form-outline mb-4">
                     <input type="text" id="name" name="name" className="form-control" />
-                    <label className="form-label" htmlFor="name">Your name</label>
+                    <label className="form-label" htmlFor="name">{t("formLabel1")}</label>
                   </div>
                 </div>
 
                 <div className="col-md-6">
                   <div className="form-outline mb-4">
                     <input type="email" id="email" name="email" className="form-control" />
-                    <label className="form-label" htmlFor="email">Your email</label>
+                    <label className="form-label" htmlFor="email">{t("formLabel2")}</label>
                   </div>
                 </div>
               </div>
@@ -428,7 +428,7 @@ export default async function Home({ params: { locale } }) {
                 <div className="col-md-12">
                   <div className="form-outline mb-4">
                     <input type="text" id="subject" name="subject" className="form-control" />
-                    <label className="form-label" htmlFor="subject">Subject</label>
+                    <label className="form-label" htmlFor="subject">{t("formLabel3")}</label>
                   </div>
                 </div>
               </div>
@@ -437,12 +437,12 @@ export default async function Home({ params: { locale } }) {
                 <div className="col-md-12">
                   <div className="form-outline mb-4">
                     <textarea className="form-control" id="message" name="message" rows="4"></textarea>
-                    <label className="form-label" htmlFor="message">Your message</label>
+                    <label className="form-label" htmlFor="message">{t("formLabel4")}</label>
                   </div>
                 </div>
               </div>
 
-              <button type="submit" className="btn text-white" style={{ backgroundColor: "#45526e" }}>Submit</button>
+              <button type="submit" className="btn text-white" style={{ backgroundColor: "#45526e" }}>{t("formButton")}</button>
               <div className="status"></div>
             </form>
           </div>
