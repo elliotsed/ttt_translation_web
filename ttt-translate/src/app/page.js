@@ -1,4 +1,6 @@
 import Image from "next/image";
+import LanguageChanger from "./[locale]/components/languageChanger"
+
 
 export default function Home() {
   return (
@@ -15,6 +17,9 @@ export default function Home() {
               className="w-100"
             />
           </a>
+
+          <LanguageChanger />
+
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -97,6 +102,7 @@ export default function Home() {
         </button>
 
       </div>
+
 
       {/* Services offered and type of translation */}
       <div className="row mt-5">
