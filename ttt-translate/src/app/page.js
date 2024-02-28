@@ -18,7 +18,7 @@ export default function Home() {
             />
           </a>
 
-          <LanguageChanger className="d-none d-md-block" />
+          <LanguageChanger />
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
