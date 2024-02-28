@@ -26,7 +26,9 @@ export default async function Home({ params: { locale } }) {
               />
             </a>
 
-            <LanguageChanger />
+            <div className="d-none d-md-block">
+              <LanguageChanger />
+            </div>
 
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
