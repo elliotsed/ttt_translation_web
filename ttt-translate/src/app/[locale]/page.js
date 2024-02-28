@@ -1,8 +1,8 @@
 import Image from "next/image";
 import initTranslations from "../i18n";
 
-export default async function Home({params: {locale}}) {
-  const {t} = await initTranslations(locale, ["home"]);
+export default async function Home({ params: { locale } }) {
+  const { t } = await initTranslations(locale, ["home"]);
   return (
     <div className="container-fluid">
       {/* Navigation bar */}
@@ -28,13 +28,13 @@ export default async function Home({params: {locale}}) {
                 <a className="nav-link mx-2" aria-current="page" href="#services">{t("nav1")}</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-2" href="#whyUs">Why US</a>
+                <a className="nav-link mx-2" href="#whyUs">{t("nav2")}</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-2" href="#partner">Partners</a>
+                <a className="nav-link mx-2" href="#partner">{t("nav3")}</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-2" href="#contact">Contact</a>
+                <a className="nav-link mx-2" href="#contact">{t("nav4")}</a>
               </li>
 
             </ul>
@@ -50,12 +50,12 @@ export default async function Home({params: {locale}}) {
             <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark fw-bold d-none d-md-block carousel-caption">
-              <p><span style={{ color: "orange" }}>Highly Professional</span> <br /> Translation Services <br /> You Can Trust
+              <p><span style={{ color: "orange" }}>{t("carousel1")}</span> <br /> {t("carousel1suite")} <br /> {t("carousel1suite2")}
               </p>
             </div>
 
             <div className="text-dark d-md-none fw-bold carousel-caption">
-              <p><span style={{ color: "orange" }}>Highly Professional</span> <br /> Translation Services
+              <p><span style={{ color: "orange" }}>{t("carousel1")}</span> <br /> {t("carousel1suite")}
               </p>
             </div>
 
@@ -64,11 +64,11 @@ export default async function Home({params: {locale}}) {
             <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark d-none d-md-block fw-bold carousel-caption ">
-              <p><span style={{ color: "orange" }}>Open Your Business</span> <br /> To The Whole World</p>
+              <p><span style={{ color: "orange" }}>{t("carousel2")}</span> <br /> {t("carousel2suite")}</p>
             </div>
 
             <div className="text-dark d-md-none fw-bold carousel-caption ">
-              <p><span style={{ color: "orange" }}>Open Your Business</span> <br /> To The World</p>
+              <p><span style={{ color: "orange" }}>{t("carousel2")}</span> <br /> {t("carousel2mobile")}</p>
             </div>
 
           </div>
@@ -76,12 +76,12 @@ export default async function Home({params: {locale}}) {
             <img src="/carousel3.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark d-none d-md-block fw-bold carousel-caption">
-              <p><span style={{ color: "orange" }}>Work Easily</span> <br /> With Our Professional <br /> Translation Agency
+              <p><span style={{ color: "orange" }}>{t("carousel3")}</span> <br /> {t("carousel3suite")} <br /> {t("carousel3suite2")}
               </p>
             </div>
 
             <div className="text-dark d-md-none fw-bold carousel-caption">
-              <p><span style={{ color: "orange" }}>Work Easily</span> <br /> With Our Agency
+              <p><span style={{ color: "orange" }}>{t("carousel3")}</span> <br /> {t("carousel3mobile")}
               </p>
             </div>
 
@@ -102,45 +102,43 @@ export default async function Home({params: {locale}}) {
 
       {/* Services offered and type of translation */}
       <div className="row mt-5">
-        <h1 className="mb-3">We offer a Wide Range of Translation Services</h1>
+        <h1 className="mb-3">{t("serviceH")}</h1>
 
         <div className="col-lg-6 col-md-6 mt-2">
           <p>
-            Our team of professional translators offers a comprehensive range of translation services to meet all your needs. Whether you have financial, commercial, marketing, legal, or religious documents to translate, we are here to help.
+            {t("serviceP1")}.
           </p>
         </div>
         <div className="col-lg-6 col-md-6 mt-2">
           <p>
-            We also specialize in subtitling services, ensuring accurate and timely provision of subtitles for video content. Our goal is to enhance accessibility for diverse audiences and improve overall comprehension of the content.
+          {t("serviceP2")}.
           </p>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2" id="services">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Documents Translations</h5>
+              <h5 className="card-title">{t("serviceH5")}</h5>
               <ul className="list-group">
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Financial documents translations</li>
+                </svg> {t("serviceUL1li1")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Commercial, Marketing & Business documents
-                  translations</li>
+                </svg> {t("serviceUL1li2")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> legal documents
-                  translations</li>
+                </svg> {t("serviceUL1li3")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Christian and Bible content translations conducted by Spirit-filled Christians</li>
+                </svg> {t("serviceUL1li4")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Other types of translations</li>
+                </svg> {t("serviceUL1li5")}</li>
               </ul>
             </div>
           </div>
@@ -148,21 +146,20 @@ export default async function Home({params: {locale}}) {
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
           <div className="card h-100">
             <div className="card-body">
-              <h5 className="card-title">Localization Services</h5>
+              <h5 className="card-title">{t("serviceH5-b")}</h5>
               <ul className="list-group">
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Penetrate foreign markets</li>
+                </svg> {t("serviceUL2li1")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Reach new clients or
-                  consumer groups</li>
+                </svg> {t("serviceUL2li2")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Increase international sales</li>
+                </svg> {t("serviceUL2li3")}</li>
               </ul>
             </div>
           </div>
@@ -170,20 +167,20 @@ export default async function Home({params: {locale}}) {
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
           <div className="card h-100">
             <div className="card-body">
-              <h5 className="card-title">Transcription Services</h5>
+              <h5 className="card-title">{t("serviceH5-c")}</h5>
               <ul className="list-group">
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Accurate and efficient conversion of audio files into written text</li>
+                </svg> {t("serviceUL3li1")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Facilitation of access to the content</li>
+                </svg> {t("serviceUL3li2")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Increase international sales</li>
+                </svg> {t("serviceUL3li3")}</li>
               </ul>
             </div>
           </div>
@@ -191,20 +188,20 @@ export default async function Home({params: {locale}}) {
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
           <div className="card h-100">
             <div className="card-body">
-              <h5 className="card-title">Subtitling</h5>
+              <h5 className="card-title">{t("serviceH5-d")}</h5>
               <ul className="list-group">
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Accurate and timely provision of subtitles for video content</li>
+                </svg> {t("serviceUL4li1")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Enhancement of accessibility for diverse audiences</li>
+                </svg> {t("serviceUL4li2")}</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Improved comprehension of the content</li>
+                </svg> {t("serviceUL4li3")}</li>
               </ul>
             </div>
           </div>
@@ -223,15 +220,14 @@ export default async function Home({params: {locale}}) {
         </div>
         <div className="col-lg-6 col-md-6 d-none d-md-block d-flex justify-content-center align-items-center mt-5">
           <div className="align-items-center">
-            <h1 className="text-center">Why Choose US?</h1>
+            <h1 className="text-center">{t("wcuTitle")}</h1>
             <h2 className="text-center mt-5" style={{ fontSize: "30px" }}><span><svg xmlns="http://www.w3.org/2000/svg" width="50"
               height="50" viewBox="0 0 32 32">
               <path fill="currentColor"
                 d="m29.482 8.624l-10-5.5a1 1 0 0 0-.964 0l-10 5.5a1 1 0 0 0 0 1.752L18 15.591V26.31l-3.036-1.67L14 26.391l4.518 2.485a.998.998 0 0 0 .964 0l10-5.5A1 1 0 0 0 30 22.5v-13a1 1 0 0 0-.518-.876M19 5.142L26.925 9.5L19 13.858L11.075 9.5Zm9 16.767l-8 4.4V15.59l8-4.4Z" />
               <path fill="currentColor" d="M10 16H2v-2h8zm2 8H4v-2h8zm2-4H6v-2h8z" />
-            </svg></span> Fast Delivery</h2>
-            <p className="text-center">Your documents are promptly translated and returned to you, maintaining efficiency
-              without compromising quality.</p>
+            </svg></span> {t("wcuH2-1")}</h2>
+            <p className="text-center">{t("wcuP1")}.</p>
 
             <h2 className="text-center mt-5" style={{ fontSize: "30px" }}>
               <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
@@ -242,21 +238,17 @@ export default async function Home({params: {locale}}) {
                     d="M17.748 8.683a7.15 7.15 0 1 0-8.89 8.884m3 5.467h8.458a2.533 2.533 0 0 0 2.542-2.523v-6.606a2.189 2.189 0 0 0-1.9-2.211a2.1 2.1 0 0 0-1.152 3.969a5.994 5.994 0 0 0 0 4.428a4.674 4.674 0 0 0-7.338-1.265" />
                   <path d="M11.633 13.625a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75" />
                 </g>
-              </svg></span> Professional Translations
+              </svg></span> {t("wcuH2-2")}
             </h2>
-            <p className="text-center">Experience the pinnacle of linguistic excellence with our professional translation
-              services, where every word is meticulously crafted by expert linguists, ensuring flawless communication
-              across languages.</p>
+            <p className="text-center">{t("wcuP2")}.</p>
 
             <h2 className="text-center mt-5" style={{ fontSize: "30px" }}>
               <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="m23.5 17l-5 5l-3.5-3.5l1.5-1.5l2 2l3.5-3.5zm-3-6a2.5 2.5 0 0 1 2.5 2.5c0 .31-.06.61-.16.89C21.8 13.5 20.46 13 19 13c-3.31 0-6 2.69-6 6v.54c-.36-1.04-1.35-1.74-2.5-1.74c-1.5 0-2.7 1.2-2.7 2.7V22H4c-1.1 0-2-.9-2-2v-3.8h1.5c1.5 0 2.7-1.2 2.7-2.7S5 10.8 3.5 10.8H2V7a2 2 0 0 1 2-2h4V3.5C8 2.12 9.12.998 10.5.998S13 2.12 13 3.5V5h4a2 2 0 0 1 2 2v4z" />
-              </svg></span> Flexible Translation Solutions
+              </svg></span> {t("wcuH2-3")}
             </h2>
-            <p className="text-center">Our translation service offers unparalleled flexibility, accommodating projects of all
-              sizes and types to meet your specific requirements. From short documents to large-scale projects, we deliver
-              customized translation solutions tailored to your needs.</p>
+            <p className="text-center">{t("wcuP3")}.</p>
           </div>
 
         </div>
@@ -268,7 +260,7 @@ export default async function Home({params: {locale}}) {
               alt="Images représentant des hommes d'affaire se serrant la main" />
 
             <div className="position-absolute top-50 start-50 translate-middle">
-              <h2 className="text-center text-dark fw-bold" style={{ fontSize: "40px" }}>Why Choose US?</h2>
+              <h2 className="text-center text-dark fw-bold" style={{ fontSize: "40px" }}>{t("wcuTitle")}</h2>
             </div>
           </div>
 
@@ -277,9 +269,8 @@ export default async function Home({params: {locale}}) {
               <path fill="currentColor"
                 d="m29.482 8.624l-10-5.5a1 1 0 0 0-.964 0l-10 5.5a1 1 0 0 0 0 1.752L18 15.591V26.31l-3.036-1.67L14 26.391l4.518 2.485a.998.998 0 0 0 .964 0l10-5.5A1 1 0 0 0 30 22.5v-13a1 1 0 0 0-.518-.876M19 5.142L26.925 9.5L19 13.858L11.075 9.5Zm9 16.767l-8 4.4V15.59l8-4.4Z" />
               <path fill="currentColor" d="M10 16H2v-2h8zm2 8H4v-2h8zm2-4H6v-2h8z" />
-            </svg></span> Fast Delivery</h2>
-            <p>Your documents are promptly translated and returned to you, maintaining efficiency
-              without compromising quality.</p>
+            </svg></span> {t("wcuH2-1")}</h2>
+            <p>{t("wcuP1")}.</p>
           </div>
 
           <div className="text-center mt-5">
@@ -292,10 +283,9 @@ export default async function Home({params: {locale}}) {
                     d="M17.748 8.683a7.15 7.15 0 1 0-8.89 8.884m3 5.467h8.458a2.533 2.533 0 0 0 2.542-2.523v-6.606a2.189 2.189 0 0 0-1.9-2.211a2.1 2.1 0 0 0-1.152 3.969a5.994 5.994 0 0 0 0 4.428a4.674 4.674 0 0 0-7.338-1.265" />
                   <path d="M11.633 13.625a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75" />
                 </g>
-              </svg></span> Professional Translations
+              </svg></span> {t("wcuH2-2")}
             </h2>
-            <p>Experience the pinnacle of linguistic excellence with our professional translation
-              services.</p>
+            <p>{t("wcuP2mobile")}.</p>
           </div>
 
           <div className="text-center mt-5">
@@ -303,10 +293,9 @@ export default async function Home({params: {locale}}) {
               <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="m23.5 17l-5 5l-3.5-3.5l1.5-1.5l2 2l3.5-3.5zm-3-6a2.5 2.5 0 0 1 2.5 2.5c0 .31-.06.61-.16.89C21.8 13.5 20.46 13 19 13c-3.31 0-6 2.69-6 6v.54c-.36-1.04-1.35-1.74-2.5-1.74c-1.5 0-2.7 1.2-2.7 2.7V22H4c-1.1 0-2-.9-2-2v-3.8h1.5c1.5 0 2.7-1.2 2.7-2.7S5 10.8 3.5 10.8H2V7a2 2 0 0 1 2-2h4V3.5C8 2.12 9.12.998 10.5.998S13 2.12 13 3.5V5h4a2 2 0 0 1 2 2v4z" />
-              </svg></span> Flexible Translation Solutions
+              </svg></span> {t("wcuH2-3")}
             </h2>
-            <p>Our translation service offers unparalleled flexibility, accommodating projects of all
-              sizes and types to meet your specific requirements.</p>
+            <p>{t("wcuP3mobile")}.</p>
           </div>
 
         </div>
@@ -317,7 +306,7 @@ export default async function Home({params: {locale}}) {
 
       {/*Global companies that trust us*/}
       <div className="row mt-5" id="partner">
-        <h1 className="text-center">Global Companies That Work With US</h1>
+        <h1 className="text-center">{t("PartnerTitle")}</h1>
         <div className="col-lg-3 col-md-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
             <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
@@ -396,7 +385,7 @@ export default async function Home({params: {locale}}) {
                 </p>
                 <footer className="blockquote-footer pt-4 mt-4 border-top">
                   Léon Bichat |
-                  <cite title="Source Title">Founder & CEO</cite>
+                  <cite title="Source Title">{t("ceoTitle")}</cite>
                 </footer>
               </blockquote>
             </div>
@@ -411,10 +400,9 @@ export default async function Home({params: {locale}}) {
         <div className="row" id="contact">
           <div className="col-md-6">
             <img src="/contactUs.jpg" className="w-100" alt="" style={{ borderRadius: "10px" }} />
-            <h1 className="text-center mt-3">Do you have any questions?</h1>
-            <p className="text-center mx-auto mb-5">Please do not hesitate to contact us
-              directly. <br />
-              Our team will come back to you within a matter of hours to help you.</p>
+            <h1 className="text-center mt-3">{t("contactH1")}</h1>
+            <p className="text-center mx-auto mb-5">{t("contactP1")}. <br />
+            {t("contactP1suite")}.</p>
           </div>
 
           <div className="col-md-6 mb-md-0 mb-5">
@@ -472,7 +460,7 @@ export default async function Home({params: {locale}}) {
                 <h6 className="text-uppercase mb-4 font-weight-bold">
                   TTT English Mission Center </h6>
                 <p>
-                  Our mission is to provide high-quality translation and language services to clients worldwide. With a focus on accuracy, professionalism, and customer satisfaction, we strive to exceed your expectations in every project.
+                {t("footerText")}.
                 </p>
               </div>
 
@@ -508,7 +496,7 @@ export default async function Home({params: {locale}}) {
                 <div className="p-3">
                   © 2024 Copyright:
                   <a className="text-white" style={{ textDecoration: "none" }} target="_blank"
-                    href="https://tttmission.vercel.app">TTT English Mission</a>
+                    href="#">TTT English Mission</a>
                 </div>
               </div>
 
