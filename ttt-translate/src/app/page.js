@@ -1,8 +1,47 @@
+"use client"
+import React, { useState } from 'react';
 import Image from "next/image";
 import LanguageChanger from "./[locale]/components/languageChanger"
 
 
 export default function Home() {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (event) => {
+    console.log(formData);
+    event.preventDefault();
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        alert(data.message);
+        window.location.reload();
+      } else {
+        alert(data.message);
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('An error occurred while sending the email, please try again');
+    }
+  };
+
   return (
     <div className="container-fluid">
       {/* Navigation bar */}
@@ -46,7 +85,7 @@ export default function Home() {
         </div>
       </nav>
 
-     
+
 
       {/*Carousel Start*/}
       <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide">
@@ -429,18 +468,18 @@ export default function Home() {
 
           <div className="col-md-6 mb-md-0 mb-5">
 
-            <form id="contact-form" name="contact-form" action="/api/sendEmail" method="POST">
+            <form id="contact-form" name="contact-form" onSubmit={handleSubmit} method="POST">
               <div className="row">
                 <div className="col-md-6">
                   <div className="form-outline mb-4">
-                    <input type="text" id="name" name="name" className="form-control" />
+                    <input type="text" id="name" name="name" className="form-control" value={formData.name} onChange={handleChange} />
                     <label className="form-label" htmlFor="name">Your name</label>
                   </div>
                 </div>
 
                 <div className="col-md-6">
                   <div className="form-outline mb-4">
-                    <input type="email" id="email" name="email" className="form-control" />
+                    <input type="email" id="email" name="email" className="form-control" value={formData.email} onChange={handleChange} />
                     <label className="form-label" htmlFor="email">Your email</label>
                   </div>
                 </div>
@@ -449,7 +488,7 @@ export default function Home() {
               <div className="row">
                 <div className="col-md-12">
                   <div className="form-outline mb-4">
-                    <input type="text" id="subject" name="subject" className="form-control" />
+                    <input type="text" id="subject" name="subject" className="form-control" value={formData.subject} onChange={handleChange} />
                     <label className="form-label" htmlFor="subject">Subject</label>
                   </div>
                 </div>
@@ -458,7 +497,7 @@ export default function Home() {
               <div className="row">
                 <div className="col-md-12">
                   <div className="form-outline mb-4">
-                    <textarea className="form-control" id="message" name="message" rows="4"></textarea>
+                    <textarea className="form-control" id="message" name="message" rows="4" value={formData.message} onChange={handleChange}></textarea>
                     <label className="form-label" htmlFor="message">Your message</label>
                   </div>
                 </div>

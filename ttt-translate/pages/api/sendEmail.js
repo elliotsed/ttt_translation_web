@@ -8,18 +8,18 @@ export default async function handler(req, res) {
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
-                user:
-                pass
+                user: process.env.MY_EMAIL,
+                pass: process.env.MY_PASSWORD
             },
         });
 
         try {
             // Envoie d'un e-mail
             const info = await transporter.sendMail({
-                from: name,
-                to: email,
-                subject: subject,
-                text: `${email}` + message,
+                from: "Elliot SEDOGBO",
+                to: "sedotou98@gmail.com",
+                subject: `New message from ${name}`,
+                html: `<h2>Subject: ${subject}</h2><p>${message}</p><p>Sender's information: ${name} - ${email}</p><h3>This message comes from ttt-lingua.vercel.app !</h3>`,
             });
 
             console.log('Message sent: %s', info.messageId);
