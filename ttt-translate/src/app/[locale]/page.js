@@ -422,46 +422,12 @@ export default async function Home({ params: { locale } }) {
                 {t("contactP1suite")}.</p>
             </div>
 
-            <div className="col-md-6 mb-md-0 mb-5">
+            <div className="col-md-6 mb-md-0 mb-5 d-flex justify-content-center">
 
-              <form id="contact-form" name="contact-form" action="/api/sendEmail" method="POST">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-outline mb-4">
-                      <input type="text" id="name" name="name" className="form-control" />
-                      <label className="form-label" htmlFor="name">{t("formLabel1")}</label>
-                    </div>
-                  </div>
-
-                  <div className="col-md-6">
-                    <div className="form-outline mb-4">
-                      <input type="email" id="email" name="email" className="form-control" />
-                      <label className="form-label" htmlFor="email">{t("formLabel2")}</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="form-outline mb-4">
-                      <input type="text" id="subject" name="subject" className="form-control" />
-                      <label className="form-label" htmlFor="subject">{t("formLabel3")}</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="form-outline mb-4">
-                      <textarea className="form-control" id="message" name="message" rows="4"></textarea>
-                      <label className="form-label" htmlFor="message">{t("formLabel4")}</label>
-                    </div>
-                  </div>
-                </div>
-
-                <button type="submit" className="btn text-white" style={{ backgroundColor: "#45526e" }}>{t("formButton")}</button>
-                <div className="status"></div>
-              </form>
+              <div className="text-center">
+                <p className="">{t("formAnnonce")}</p>
+                <a className="btn-primary btn" href="/">{t("formLink")}</a>
+              </div>
             </div>
 
 

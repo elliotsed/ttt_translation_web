@@ -1,5 +1,7 @@
 {
     "ceoTitle": "Founder & CEO",
+    "formAnnonce": "The contact form is not working here. Please go to the main page to submit your message",
+    "formLink": "Go now",
     "formLabel1": "Your name",
     "formLabel2": "Your email",
     "formLabel3": "Subject",
