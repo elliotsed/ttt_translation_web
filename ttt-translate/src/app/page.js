@@ -32,13 +32,17 @@ export default function Home() {
       const data = await response.json();
       if (response.ok) {
         alert(data.message);
-        window.location.reload();
+        setFormData({name:"", email:"", subject:"", message:""});
       } else {
         alert(data.message);
+        setFormData({name:"", email:"", subject:"", message:""});
+
       }
     } catch (error) {
       console.error('Error sending email:', error);
       alert('An error occurred while sending the email, please try again');
+      setFormData({name:"", email:"", subject:"", message:""});
+
     }
   };
 

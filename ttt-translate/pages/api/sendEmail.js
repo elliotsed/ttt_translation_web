@@ -19,7 +19,7 @@ export default async function handler(req, res) {
                 from: "Elliot SEDOGBO",
                 to: "sedotou98@gmail.com",
                 subject: `New message from ${name}`,
-                html: `<h2>Subject: ${subject}</h2><p>${message}</p><p>Sender's information: ${name} - ${email}</p><h3>This message comes from ttt-lingua.vercel.app !</h3>`,
+                html: `<h3>[SUBJECT]: ${subject}</h3><p>[SENDER]: ${name} - ${email}</p><p>${message}</p><p><strong>This message comes from ttt-lingua.vercel.app <br/> Contact directly the sender to answer.</strong></p>`,
             });
 
             console.log('Message sent: %s', info.messageId);
