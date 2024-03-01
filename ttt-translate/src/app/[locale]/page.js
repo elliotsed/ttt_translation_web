@@ -430,7 +430,7 @@ export default async function Home({ params: { locale } }) {
 
               <div className="text-center">
                 <p className="">{t("formAnnonce")}</p>
-                <a className="btn-primary btn" href="/">{t("formLink")}</a>
+                <a className="btn-primary btn" href="/#contact">{t("formLink")}</a>
               </div>
             </div>
 
