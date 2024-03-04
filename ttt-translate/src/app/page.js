@@ -380,56 +380,71 @@ export default function Home() {
       {/*Global companies that trust us*/}
       <div className="row mt-5" id="partner">
         <h1 className="text-center">Global Companies That Work With US</h1>
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
             <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
           </a>
         </div>
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.primefocustechnologies.com/" target="blank">
             <img src="/PFT (2)_0.jpg" className="d-block w-75" alt="..." />
           </a>
         </div>
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.productionhub.com/profile/christian-dubbing-studio" target="blank">
             <img src="/cds.jpeg" className="d-block w-75" alt="..." />
           </a>
         </div>
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://thetranslationgate.com/" target="blank">
             <img src="/tgate.webp" className="d-block w-75" alt="..." />
           </a>
         </div>
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.captioningstar.com/" target="blank">
             <img src="/captioningstar_logo.jpeg" className="d-block w-75" alt="..." />
           </a>
         </div>
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://viax-translations.com/" target="blank">
             <img src="/viax_corporate_language_solutions_logo.jpeg" className="d-block w-75" alt="..." />
           </a>
         </div>
 
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.somyatrans.com/" target="blank">
             <img src="/somya.png" className="d-block w-75" alt="..." />
           </a>
         </div>
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.verztec.com/index.php/us/" target="blank">
             <img src="/Verztec.jpg" className="d-block w-75" alt="..." />
           </a>
         </div>
 
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://www.transcriptionstar.com/" target="blank">
             <img src="/transstar.jpeg" className="d-block w-75" alt="..." />
           </a>
         </div>
-        <div className="col-lg-3 col-md-6 mt-3">
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
           <a className="d-flex justify-content-center" href="https://lexico-translations.com/home-2/" target="blank">
             <img src="/lexico.png" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://lwtcommunications.com/" target="blank">
+            <img src="/lwt.jpeg" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://www.bylanguages.com/" target="blank">
+            <img src="/bylanguages.png" className="d-block w-75" alt="..." />
+          </a>
+        </div>
+        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+          <a className="d-flex justify-content-center" href="https://www.verbolabs.com/" target="blank">
+            <img src="/verbo.png" className="d-block w-75" alt="..." />
           </a>
         </div>
       </div>
@@ -452,9 +467,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <p className="mb-0 mt-2 font-italic">
-                  &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo&quot;
+                  &quot;The vision our team at TTT ENGLISH MISSION CENTER has so preciously over the years has been to maximize the speed and efficiency of all our services, customer experience, partnerships and responses to our clients while always topping quality. And it's so exciting to know that this vision will continue to drive us for the years to come&quot;
                 </p>
                 <footer className="blockquote-footer pt-4 mt-4 border-top">
                   Léon Bichat |

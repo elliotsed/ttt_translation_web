@@ -400,9 +400,7 @@ export default async function Home({ params: { locale } }) {
                     </svg>
                   </div>
                   <p className="mb-0 mt-2 font-italic">
-                    &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo&quot;
+                    &quot;{t("ceoWords")}&quot;
                   </p>
                   <footer className="blockquote-footer pt-4 mt-4 border-top">
                     Léon Bichat |
