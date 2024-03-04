@@ -2,6 +2,7 @@ import Image from "next/image";
 import initTranslations from "../i18n";
 import LanguageChanger from "./components/languageChanger"
 import TranslationsProvider from './components/TranslationsProvider';
+import FormLogic from "./components/formLogic";
 
 const i18nNamespaces = ['home'];
 
@@ -424,12 +425,9 @@ export default async function Home({ params: { locale } }) {
                 {t("contactP1suite")}.</p>
             </div>
 
-            <div className="col-md-6 mb-md-0 mb-5 d-flex justify-content-center">
+            <div className="col-md-6 mb-md-0 mb-5">
 
-              <div className="text-center">
-                <p className="">{t("formAnnonce")}</p>
-                <a className="btn-primary btn" href="/#contact">{t("formLink")}</a>
-              </div>
+              <FormLogic />
             </div>
 
 
