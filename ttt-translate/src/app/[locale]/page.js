@@ -381,6 +381,21 @@ export default async function Home({ params: { locale } }) {
               <img src="/lexico.png" className="d-block w-75" alt="..." />
             </a>
           </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://lwtcommunications.com/" target="blank">
+              <img src="/lwt.jpeg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.bylanguages.com/" target="blank">
+              <img src="/bylanguages.png" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.verbolabs.com/" target="blank">
+              <img src="/verbo.png" className="d-block w-75" alt="..." />
+            </a>
+          </div>
         </div>
         <hr className="my-5"></hr>
 
