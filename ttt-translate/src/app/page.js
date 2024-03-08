@@ -467,7 +467,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <p className="mb-0 mt-2 fst-italic">
-                  The vision our team at TTT ENGLISH MISSION CENTER has so preciously over the years has been to maximize the speed and efficiency of all our services, customer experience, partnerships and responses to our clients while always topping quality. And it&apos;s so exciting to know that this vision will continue to drive us for the years to come.
+                  The vision our team at TTT ENGLISH MISSION CENTER has so preciously over the years has been to maximize the efficiency of all our services and customer experience while always topping quality. And it&apos;s so exciting to know that this vision will continue to drive us for the years to come.
                 </p>
                 <footer className="blockquote-footer pt-4 mt-4 border-top">
                   Léon Bichat |
