@@ -487,7 +487,7 @@ export default function Home() {
         <div className="row" id="contact">
           <div className="col-md-6">
             <img src="/contactUs.jpg" className="w-100" alt="" style={{ borderRadius: "10px" }} />
-            <h1 className="text-center mt-3 custom-title fw-bold">Do you have any questions?</h1>
+            <h1 className="text-center mt-3 custom-title fw-bold">Do You Have Any Questions?</h1>
             <p className="text-center mx-auto mb-5">Please do not hesitate to contact us
               directly. <br />
               Our team will come back to you within a matter of hours to help you.</p>
