@@ -5,6 +5,11 @@
   font-weight: 500;
 }
 
+.custom-title {
+  font-family: 'Madimi One';
+  color: #05475C;
+}
+
 .carousel-caption {
   text-align: center;
   font-size: large;
