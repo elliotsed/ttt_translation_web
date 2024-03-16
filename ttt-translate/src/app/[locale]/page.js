@@ -328,7 +328,7 @@ export default async function Home({ params: { locale } }) {
 
         {/*Global companies that trust us*/}
         <div className="row mt-5" id="partner">
-          <h1 className="text-center custom-title fw-bold">Global Companies That Work With US</h1>
+          <h1 className="text-center custom-title fw-bold">{t("PartnerTitle")}</h1>
           <div className='row mt-3'>
             <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
               <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
