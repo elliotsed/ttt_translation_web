@@ -194,7 +194,7 @@ export default function Home() {
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
-                </svg> Christian and Bible content translations conducted by Spirit-filled Christians</li>
+                </svg> Christian and Bible/Faith-related content translations conducted by Spirit-filled Christians</li>
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
                   <path fill="green" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
@@ -467,7 +467,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <p className="mb-0 mt-2 fst-italic">
-                  The vision our team at TTT ENGLISH MISSION CENTER has so preciously over the years has been to maximize the efficiency of all our services and customer experience while always topping quality. And it&apos;s so exciting to know that this vision will continue to drive us for the years to come.
+                  The vision our team at TTT ENGLISH MISSION CENTER has so preciously kept over the years has been to maximize the efficiency of all our services and customer experience while always topping quality. And it&apos;s so exciting to know that this vision will continue to drive us for the years to come.
                 </p>
                 <footer className="blockquote-footer pt-4 mt-4 border-top">
                   Léon Bichat |
