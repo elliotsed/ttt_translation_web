@@ -63,13 +63,13 @@ export default async function Home({ params: { locale } }) {
             <div className="carousel-item active" data-bs-interval="5000">
               <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-              <div className="text-dark fw-bold d-none d-md-block carousel-caption">
-                <p><span style={{ color: "orange" }}>{t("carousel1")}</span> <br /> {t("carousel1suite")} <br /> {t("carousel1suite2")}
+              <div className="text-dark d-none d-md-block carousel-caption">
+                <p><span className="custom-title fw-bold">{t("carousel1")}</span> <br /> {t("carousel1suite")} <br /> {t("carousel1suite2")}
                 </p>
               </div>
 
-              <div className="text-dark d-md-none fw-bold carousel-caption">
-                <p><span style={{ color: "orange" }}>{t("carousel1")}</span> <br /> {t("carousel1suite")}
+              <div className="text-dark d-md-none carousel-caption">
+                <p><span className="custom-title fw-bold">{t("carousel1")}</span> <br /> {t("carousel1suite")}
                 </p>
               </div>
 
@@ -77,25 +77,25 @@ export default async function Home({ params: { locale } }) {
             <div className="carousel-item" data-bs-interval="5000">
               <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-              <div className="text-dark d-none d-md-block fw-bold carousel-caption ">
-                <p><span style={{ color: "orange" }}>{t("carousel2")}</span> <br /> {t("carousel2suite")}</p>
+              <div className="text-dark d-none d-md-block carousel-caption ">
+                <p><span className="custom-title fw-bold">{t("carousel2")}</span> <br /> {t("carousel2suite")}</p>
               </div>
 
-              <div className="text-dark d-md-none fw-bold carousel-caption ">
-                <p><span style={{ color: "orange" }}>{t("carousel2")}</span> <br /> {t("carousel2mobile")}</p>
+              <div className="text-dark d-md-none carousel-caption ">
+                <p><span className="custom-title fw-bold">{t("carousel2")}</span> <br /> {t("carousel2mobile")}</p>
               </div>
 
             </div>
             <div className="carousel-item " data-bs-interval="5000">
               <img src="/carousel3.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-              <div className="text-dark d-none d-md-block fw-bold carousel-caption">
-                <p><span style={{ color: "orange" }}>{t("carousel3")}</span> <br /> {t("carousel3suite")} <br /> {t("carousel3suite2")}
+              <div className="text-dark d-none d-md-block carousel-caption">
+                <p><span className="custom-title fw-bold">{t("carousel3")}</span> <br /> {t("carousel3suite")} <br /> {t("carousel3suite2")}
                 </p>
               </div>
 
-              <div className="text-dark d-md-none fw-bold carousel-caption">
-                <p><span style={{ color: "orange" }}>{t("carousel3")}</span> <br /> {t("carousel3mobile")}
+              <div className="text-dark d-md-none carousel-caption">
+                <p><span className="custom-title fw-bold">{t("carousel3")}</span> <br /> {t("carousel3mobile")}
                 </p>
               </div>
 
@@ -120,7 +120,7 @@ export default async function Home({ params: { locale } }) {
 
         {/* Services offered and type of translation */}
         <div className="row mt-5">
-          <h1 className="mb-3">{t("serviceH")}</h1>
+          <h1 className="mb-3 custom-title fw-bold">{t("serviceH")}</h1>
 
           <div className="col-lg-6 col-md-6 mt-2">
             <p>
@@ -135,7 +135,7 @@ export default async function Home({ params: { locale } }) {
           <div className="col-lg-3 col-md-6 col-sm-6 mt-2" id="services">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">{t("serviceH5")}</h5>
+                <h5 className="card-title custom-title fw-bold">{t("serviceH5")}</h5>
                 <ul className="list-group">
                   <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     viewBox="0 0 20 20">
@@ -168,7 +168,7 @@ export default async function Home({ params: { locale } }) {
           <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
             <div className="card h-100">
               <div className="card-body">
-                <h5 className="card-title">{t("serviceH5-b")}</h5>
+                <h5 className="card-title custom-title fw-bold">{t("serviceH5-b")}</h5>
                 <ul className="list-group">
                   <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     viewBox="0 0 20 20">
@@ -189,7 +189,7 @@ export default async function Home({ params: { locale } }) {
           <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
             <div className="card h-100">
               <div className="card-body">
-                <h5 className="card-title">{t("serviceH5-c")}</h5>
+                <h5 className="card-title custom-title fw-bold">{t("serviceH5-c")}</h5>
                 <ul className="list-group">
                   <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     viewBox="0 0 20 20">
@@ -210,7 +210,7 @@ export default async function Home({ params: { locale } }) {
           <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
             <div className="card h-100">
               <div className="card-body">
-                <h5 className="card-title">{t("serviceH5-d")}</h5>
+                <h5 className="card-title custom-title fw-bold">{t("serviceH5-d")}</h5>
                 <ul className="list-group">
                   <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     viewBox="0 0 20 20">
@@ -242,8 +242,8 @@ export default async function Home({ params: { locale } }) {
           </div>
           <div className="col-lg-6 col-md-6 d-none d-md-block d-flex justify-content-center align-items-center mt-5">
             <div className="align-items-center">
-              <h1 className="text-center">{t("wcuTitle")}</h1>
-              <h2 className="text-center mt-5" style={{ fontSize: "30px" }}><span><svg xmlns="http://www.w3.org/2000/svg" width="50"
+              <h1 className="text-center custom-title fw-bold">{t("wcuTitle")}</h1>
+              <h2 className="text-center custom-title mt-5" style={{ fontSize: "30px" }}><span><svg xmlns="http://www.w3.org/2000/svg" width="50"
                 height="50" viewBox="0 0 32 32">
                 <path fill="currentColor"
                   d="m29.482 8.624l-10-5.5a1 1 0 0 0-.964 0l-10 5.5a1 1 0 0 0 0 1.752L18 15.591V26.31l-3.036-1.67L14 26.391l4.518 2.485a.998.998 0 0 0 .964 0l10-5.5A1 1 0 0 0 30 22.5v-13a1 1 0 0 0-.518-.876M19 5.142L26.925 9.5L19 13.858L11.075 9.5Zm9 16.767l-8 4.4V15.59l8-4.4Z" />
@@ -251,7 +251,7 @@ export default async function Home({ params: { locale } }) {
               </svg></span> {t("wcuH2-1")}</h2>
               <p className="text-center">{t("wcuP1")}.</p>
 
-              <h2 className="text-center mt-5" style={{ fontSize: "30px" }}>
+              <h2 className="text-center custom-title mt-5" style={{ fontSize: "30px" }}>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                   <g fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round"
@@ -264,7 +264,7 @@ export default async function Home({ params: { locale } }) {
               </h2>
               <p className="text-center">{t("wcuP2")}.</p>
 
-              <h2 className="text-center mt-5" style={{ fontSize: "30px" }}>
+              <h2 className="text-center custom-title mt-5" style={{ fontSize: "30px" }}>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                   <path fill="currentColor"
                     d="m23.5 17l-5 5l-3.5-3.5l1.5-1.5l2 2l3.5-3.5zm-3-6a2.5 2.5 0 0 1 2.5 2.5c0 .31-.06.61-.16.89C21.8 13.5 20.46 13 19 13c-3.31 0-6 2.69-6 6v.54c-.36-1.04-1.35-1.74-2.5-1.74c-1.5 0-2.7 1.2-2.7 2.7V22H4c-1.1 0-2-.9-2-2v-3.8h1.5c1.5 0 2.7-1.2 2.7-2.7S5 10.8 3.5 10.8H2V7a2 2 0 0 1 2-2h4V3.5C8 2.12 9.12.998 10.5.998S13 2.12 13 3.5V5h4a2 2 0 0 1 2 2v4z" />
@@ -282,12 +282,12 @@ export default async function Home({ params: { locale } }) {
                 alt="Images représentant des hommes d'affaire se serrant la main" />
 
               <div className="position-absolute top-50 start-50 translate-middle">
-                <h2 className="text-center text-dark fw-bold" style={{ fontSize: "40px" }}>{t("wcuTitle")}</h2>
+                <h2 className="text-center custom-title fw-bold" style={{ fontSize: "40px" }}>{t("wcuTitle")}</h2>
               </div>
             </div>
 
             <div className="text-center mt-5">
-              <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
+              <h2 className='custom-title'><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
                 <path fill="currentColor"
                   d="m29.482 8.624l-10-5.5a1 1 0 0 0-.964 0l-10 5.5a1 1 0 0 0 0 1.752L18 15.591V26.31l-3.036-1.67L14 26.391l4.518 2.485a.998.998 0 0 0 .964 0l10-5.5A1 1 0 0 0 30 22.5v-13a1 1 0 0 0-.518-.876M19 5.142L26.925 9.5L19 13.858L11.075 9.5Zm9 16.767l-8 4.4V15.59l8-4.4Z" />
                 <path fill="currentColor" d="M10 16H2v-2h8zm2 8H4v-2h8zm2-4H6v-2h8z" />
@@ -296,7 +296,7 @@ export default async function Home({ params: { locale } }) {
             </div>
 
             <div className="text-center mt-5">
-              <h2>
+              <h2 className='custom-title'>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                   <g fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round"
@@ -311,7 +311,7 @@ export default async function Home({ params: { locale } }) {
             </div>
 
             <div className="text-center mt-5">
-              <h2>
+              <h2 className='custom-title'>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                   <path fill="currentColor"
                     d="m23.5 17l-5 5l-3.5-3.5l1.5-1.5l2 2l3.5-3.5zm-3-6a2.5 2.5 0 0 1 2.5 2.5c0 .31-.06.61-.16.89C21.8 13.5 20.46 13 19 13c-3.31 0-6 2.69-6 6v.54c-.36-1.04-1.35-1.74-2.5-1.74c-1.5 0-2.7 1.2-2.7 2.7V22H4c-1.1 0-2-.9-2-2v-3.8h1.5c1.5 0 2.7-1.2 2.7-2.7S5 10.8 3.5 10.8H2V7a2 2 0 0 1 2-2h4V3.5C8 2.12 9.12.998 10.5.998S13 2.12 13 3.5V5h4a2 2 0 0 1 2 2v4z" />
@@ -328,74 +328,75 @@ export default async function Home({ params: { locale } }) {
 
         {/*Global companies that trust us*/}
         <div className="row mt-5" id="partner">
-          <h1 className="text-center">{t("PartnerTitle")}</h1>
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
-              <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.primefocustechnologies.com/" target="blank">
-              <img src="/PFT (2)_0.jpg" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.productionhub.com/profile/christian-dubbing-studio" target="blank">
-              <img src="/cds.jpeg" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://thetranslationgate.com/" target="blank">
-              <img src="/tgate.webp" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.captioningstar.com/" target="blank">
-              <img src="/captioningstar_logo.jpeg" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://viax-translations.com/" target="blank">
-              <img src="/viax_corporate_language_solutions_logo.jpeg" className="d-block w-75" alt="..." />
-            </a>
+          <h1 className="text-center custom-title fw-bold">Global Companies That Work With US</h1>
+          <div className='row mt-3'>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
+                <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.primefocustechnologies.com/" target="blank">
+                <img src="/PFT (2)_0.jpg" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.productionhub.com/profile/christian-dubbing-studio" target="blank">
+                <img src="/cds.jpeg" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://thetranslationgate.com/" target="blank">
+                <img src="/tgate.webp" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.captioningstar.com/" target="blank">
+                <img src="/captioningstar_logo.jpeg" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://viax-translations.com/" target="blank">
+                <img src="/viax_corporate_language_solutions_logo.jpeg" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.somyatrans.com/" target="blank">
+                <img src="/somya.png" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.verztec.com/index.php/us/" target="blank">
+                <img src="/Verztec.jpg" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.transcriptionstar.com/" target="blank">
+                <img src="/transstar.jpeg" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://lexico-translations.com/home-2/" target="blank">
+                <img src="/lexico.png" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://lwtcommunications.com/" target="blank">
+                <img src="/lwt.jpeg" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.bylanguages.com/" target="blank">
+                <img src="/bylanguages.png" className="d-block w-75" alt="..." />
+              </a>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+              <a className="d-flex justify-content-center" href="https://www.verbolabs.com/" target="blank">
+                <img src="/verbo.png" className="d-block w-75" alt="..." />
+              </a>
+            </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.somyatrans.com/" target="blank">
-              <img src="/somya.png" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.verztec.com/index.php/us/" target="blank">
-              <img src="/Verztec.jpg" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.transcriptionstar.com/" target="blank">
-              <img src="/transstar.jpeg" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://lexico-translations.com/home-2/" target="blank">
-              <img src="/lexico.png" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://lwtcommunications.com/" target="blank">
-              <img src="/lwt.jpeg" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.bylanguages.com/" target="blank">
-              <img src="/bylanguages.png" className="d-block w-75" alt="..." />
-            </a>
-          </div>
-          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-            <a className="d-flex justify-content-center" href="https://www.verbolabs.com/" target="blank">
-              <img src="/verbo.png" className="d-block w-75" alt="..." />
-            </a>
-          </div>
         </div>
         <hr className="my-5"></hr>
 
@@ -435,7 +436,7 @@ export default async function Home({ params: { locale } }) {
           <div className="row" id="contact">
             <div className="col-md-6">
               <img src="/contactUs.jpg" className="w-100" alt="" style={{ borderRadius: "10px" }} />
-              <h1 className="text-center mt-3">{t("contactH1")}</h1>
+              <h1 className="text-center custom-title fw-bold mt-3">{t("contactH1")}</h1>
               <p className="text-center mx-auto mb-5">{t("contactP1")}. <br />
                 {t("contactP1suite")}.</p>
             </div>
