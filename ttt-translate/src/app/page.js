@@ -285,8 +285,8 @@ export default function Home() {
         </div>
         <div className="col-lg-6 col-md-6 d-none d-md-block d-flex justify-content-center align-items-center mt-5">
           <div className="align-items-center">
-            <h1 className="text-center">Why Choose US?</h1>
-            <h2 className="text-center mt-5" style={{ fontSize: "30px" }}><span><svg xmlns="http://www.w3.org/2000/svg" width="50"
+            <h1 className="text-center fw-bold custom-title">Why Choose US?</h1>
+            <h2 className="text-center custom-title mt-5" style={{ fontSize: "30px" }}><span><svg xmlns="http://www.w3.org/2000/svg" width="50"
               height="50" viewBox="0 0 32 32">
               <path fill="currentColor"
                 d="m29.482 8.624l-10-5.5a1 1 0 0 0-.964 0l-10 5.5a1 1 0 0 0 0 1.752L18 15.591V26.31l-3.036-1.67L14 26.391l4.518 2.485a.998.998 0 0 0 .964 0l10-5.5A1 1 0 0 0 30 22.5v-13a1 1 0 0 0-.518-.876M19 5.142L26.925 9.5L19 13.858L11.075 9.5Zm9 16.767l-8 4.4V15.59l8-4.4Z" />
@@ -295,7 +295,7 @@ export default function Home() {
             <p className="text-center">Your documents are promptly translated and returned to you, maintaining efficiency
               without compromising quality.</p>
 
-            <h2 className="text-center mt-5" style={{ fontSize: "30px" }}>
+            <h2 className="text-center custom-title mt-5" style={{ fontSize: "30px" }}>
               <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path strokeLinecap="round" strokeLinejoin="round"
@@ -310,7 +310,7 @@ export default function Home() {
               services, where every word is meticulously crafted by expert linguists, ensuring flawless communication
               across languages.</p>
 
-            <h2 className="text-center mt-5" style={{ fontSize: "30px" }}>
+            <h2 className="text-center custom-title mt-5" style={{ fontSize: "30px" }}>
               <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="m23.5 17l-5 5l-3.5-3.5l1.5-1.5l2 2l3.5-3.5zm-3-6a2.5 2.5 0 0 1 2.5 2.5c0 .31-.06.61-.16.89C21.8 13.5 20.46 13 19 13c-3.31 0-6 2.69-6 6v.54c-.36-1.04-1.35-1.74-2.5-1.74c-1.5 0-2.7 1.2-2.7 2.7V22H4c-1.1 0-2-.9-2-2v-3.8h1.5c1.5 0 2.7-1.2 2.7-2.7S5 10.8 3.5 10.8H2V7a2 2 0 0 1 2-2h4V3.5C8 2.12 9.12.998 10.5.998S13 2.12 13 3.5V5h4a2 2 0 0 1 2 2v4z" />
@@ -380,73 +380,74 @@ export default function Home() {
       {/*Global companies that trust us*/}
       <div className="row mt-5" id="partner">
         <h1 className="text-center custom-title fw-bold">Global Companies That Work With US</h1>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
-            <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.primefocustechnologies.com/" target="blank">
-            <img src="/PFT (2)_0.jpg" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.productionhub.com/profile/christian-dubbing-studio" target="blank">
-            <img src="/cds.jpeg" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://thetranslationgate.com/" target="blank">
-            <img src="/tgate.webp" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.captioningstar.com/" target="blank">
-            <img src="/captioningstar_logo.jpeg" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://viax-translations.com/" target="blank">
-            <img src="/viax_corporate_language_solutions_logo.jpeg" className="d-block w-75" alt="..." />
-          </a>
+        <div className='row mt-3'>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.globalvoicesmedia.com/" target="blank">
+              <img src="/global_voices_media_logo.jpeg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.primefocustechnologies.com/" target="blank">
+              <img src="/PFT (2)_0.jpg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.productionhub.com/profile/christian-dubbing-studio" target="blank">
+              <img src="/cds.jpeg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://thetranslationgate.com/" target="blank">
+              <img src="/tgate.webp" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.captioningstar.com/" target="blank">
+              <img src="/captioningstar_logo.jpeg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://viax-translations.com/" target="blank">
+              <img src="/viax_corporate_language_solutions_logo.jpeg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.somyatrans.com/" target="blank">
+              <img src="/somya.png" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.verztec.com/index.php/us/" target="blank">
+              <img src="/Verztec.jpg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.transcriptionstar.com/" target="blank">
+              <img src="/transstar.jpeg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://lexico-translations.com/home-2/" target="blank">
+              <img src="/lexico.png" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://lwtcommunications.com/" target="blank">
+              <img src="/lwt.jpeg" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.bylanguages.com/" target="blank">
+              <img src="/bylanguages.png" className="d-block w-75" alt="..." />
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
+            <a className="d-flex justify-content-center" href="https://www.verbolabs.com/" target="blank">
+              <img src="/verbo.png" className="d-block w-75" alt="..." />
+            </a>
+          </div>
         </div>
 
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.somyatrans.com/" target="blank">
-            <img src="/somya.png" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.verztec.com/index.php/us/" target="blank">
-            <img src="/Verztec.jpg" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.transcriptionstar.com/" target="blank">
-            <img src="/transstar.jpeg" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://lexico-translations.com/home-2/" target="blank">
-            <img src="/lexico.png" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://lwtcommunications.com/" target="blank">
-            <img src="/lwt.jpeg" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.bylanguages.com/" target="blank">
-            <img src="/bylanguages.png" className="d-block w-75" alt="..." />
-          </a>
-        </div>
-        <div className="col-lg-3 col-md-3 col-sm-6 mt-3">
-          <a className="d-flex justify-content-center" href="https://www.verbolabs.com/" target="blank">
-            <img src="/verbo.png" className="d-block w-75" alt="..." />
-          </a>
-        </div>
       </div>
       <hr className="my-5"></hr>
 
