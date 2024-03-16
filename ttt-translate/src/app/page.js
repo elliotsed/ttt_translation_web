@@ -104,12 +104,12 @@ export default function Home() {
             <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark fw-bold d-none d-md-block carousel-caption">
-              <p><span style={{ color: "orange" }}>Highly Professional</span> <br /> Translation Services <br /> You Can Trust
+              <p><span style={{ color: "red" }}>Highly Professional</span> <br /> Translation Services <br /> You Can Trust
               </p>
             </div>
 
             <div className="text-dark d-md-none fw-bold carousel-caption">
-              <p><span style={{ color: "orange" }}>Highly Professional</span> <br /> Translation Services
+              <p><span style={{ color: "red" }}>Highly Professional</span> <br /> Translation Services
               </p>
             </div>
 
@@ -118,11 +118,11 @@ export default function Home() {
             <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark d-none d-md-block fw-bold carousel-caption ">
-              <p><span style={{ color: "orange" }}>Open Your Business</span> <br /> To The Whole World</p>
+              <p><span style={{ color: "red" }}>Open Your Business</span> <br /> To The Whole World</p>
             </div>
 
             <div className="text-dark d-md-none fw-bold carousel-caption ">
-              <p><span style={{ color: "orange" }}>Open Your Business</span> <br /> To The World</p>
+              <p><span style={{ color: "red" }}>Open Your Business</span> <br /> To The World</p>
             </div>
 
           </div>
@@ -135,7 +135,7 @@ export default function Home() {
             </div>
 
             <div className="text-dark d-md-none fw-bold carousel-caption">
-              <p><span style={{ color: "orange" }}>Work Easily</span> <br /> With Our Agency
+              <p><span style={{ color: "red" }}>Work Easily</span> <br /> With Our Agency
               </p>
             </div>
 
