@@ -103,13 +103,13 @@ export default function Home() {
           <div className="carousel-item active" data-bs-interval="5000">
             <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-            <div className="text-dark fw-bold d-none d-md-block carousel-caption">
-              <p><span style={{ color: "#05475C" }}>Highly Professional</span> <br /> Translation Services <br /> You Can Trust
+            <div className="text-dark d-none d-md-block carousel-caption">
+              <p><span className="custom-title fw-bold">Highly Professional</span> <br /> Translation Services <br /> You Can Trust
               </p>
             </div>
 
-            <div className="text-dark d-md-none fw-bold carousel-caption">
-              <p><span style={{ color: "#05475C" }}>Highly Professional</span> <br /> Translation Services
+            <div className="text-dark d-md-none carousel-caption">
+              <p><span className="custom-title fw-bold">Highly Professional</span> <br /> Translation Services
               </p>
             </div>
 
@@ -117,25 +117,25 @@ export default function Home() {
           <div className="carousel-item" data-bs-interval="5000">
             <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-            <div className="text-dark d-none d-md-block fw-bold carousel-caption ">
-              <p><span style={{ color: "#05475C" }}>Open Your Business</span> <br /> To The Whole World</p>
+            <div className="text-dark d-none d-md-block carousel-caption ">
+              <p><span className="custom-title fw-bold">Open Your Business</span> <br /> To The Whole World</p>
             </div>
 
-            <div className="text-dark d-md-none fw-bold carousel-caption ">
-              <p><span style={{ color: "#05475C" }}>Open Your Business</span> <br /> To The World</p>
+            <div className="text-dark d-md-none carousel-caption ">
+              <p><span className="custom-title fw-bold">Open Your Business</span> <br /> To The World</p>
             </div>
 
           </div>
           <div className="carousel-item " data-bs-interval="5000">
             <img src="/carousel3.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
-            <div className="text-dark d-none d-md-block fw-bold carousel-caption">
-              <p><span style={{ color: "#05475C" }}>Work Easily</span> <br /> With Our Professional <br /> Translation Agency
+            <div className="text-dark d-none d-md-block carousel-caption">
+              <p><span className="custom-title fw-bold">Work Easily</span> <br /> With Our Professional <br /> Translation Agency
               </p>
             </div>
 
-            <div className="text-dark d-md-none fw-bold carousel-caption">
-              <p><span style={{ color: "#05475C" }}>Work Easily</span> <br /> With Our Agency
+            <div className="text-dark d-md-none carousel-caption">
+              <p><span className="custom-title fw-bold">Work Easily</span> <br /> With Our Agency
               </p>
             </div>
 
@@ -175,7 +175,7 @@ export default function Home() {
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2" id="services">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Documents Translations</h5>
+              <h5 className="card-title custom-title fw-bold">Documents Translations</h5>
               <ul className="list-group">
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
@@ -210,7 +210,7 @@ export default function Home() {
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
           <div className="card h-100">
             <div className="card-body">
-              <h5 className="card-title">Localization Services</h5>
+              <h5 className="card-title custom-title fw-bold">Localization Services</h5>
               <ul className="list-group">
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
@@ -232,7 +232,7 @@ export default function Home() {
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
           <div className="card h-100">
             <div className="card-body">
-              <h5 className="card-title">Transcription Services</h5>
+              <h5 className="card-title custom-title fw-bold">Transcription Services</h5>
               <ul className="list-group">
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
@@ -253,7 +253,7 @@ export default function Home() {
         <div className="col-lg-3 col-md-6 col-sm-6 mt-2">
           <div className="card h-100">
             <div className="card-body">
-              <h5 className="card-title">Subtitling</h5>
+              <h5 className="card-title custom-title fw-bold">Subtitling</h5>
               <ul className="list-group">
                 <li className="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 20 20">
@@ -330,7 +330,7 @@ export default function Home() {
               alt="Images représentant des hommes d'affaire se serrant la main" />
 
             <div className="position-absolute top-50 start-50 translate-middle">
-              <h2 className="text-center custom-title" style={{ fontSize: "40px" }}>Why Choose US?</h2>
+              <h2 className="text-center custom-title fw-bold" style={{ fontSize: "40px" }}>Why Choose US?</h2>
             </div>
           </div>
 
