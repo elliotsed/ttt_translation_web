@@ -154,10 +154,10 @@ export default function Home() {
 
       </div>
 
-      <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide d-none d-md-block">
+      <div id="carouselExampleAutoplaying2" data-bs-ride="carousel" className="carousel slide d-none d-md-block">
 
         <div className="carousel-inner" style={{ marginTop: "96px" }}>
-          <div className="carousel-item active" data-bs-interval="5000">
+          <div className="carousel-item" data-bs-interval="5000">
             <img src="/co-travailleurz.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark d-none d-md-block carousel-caption">
@@ -171,7 +171,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="carousel-item" data-bs-interval="5000">
+          <div className="carousel-item active" data-bs-interval="5000">
             <img src="/manwithlaptopz.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark d-none d-md-block carousel-caption ">
@@ -200,11 +200,11 @@ export default function Home() {
 
         </div>
 
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>

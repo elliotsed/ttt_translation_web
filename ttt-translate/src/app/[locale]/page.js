@@ -57,7 +57,7 @@ export default async function Home({ params: { locale } }) {
         </nav>
 
         {/*Carousel Start*/}
-        <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide">
+        <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide d-md-none">
 
           <div className="carousel-inner" style={{ marginTop: "96px" }}>
             <div className="carousel-item active" data-bs-interval="5000">
@@ -108,6 +108,63 @@ export default async function Home({ params: { locale } }) {
             <span className="visually-hidden">Previous</span>
           </button>
           <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+        <div id="carouselExampleAutoplaying2" data-bs-ride="carousel" className="carousel slide d-none d-md-block">
+
+          <div className="carousel-inner" style={{ marginTop: "96px" }}>
+            <div className="carousel-item" data-bs-interval="5000">
+              <img src="/co-travailleurz.jpg" className="d-block w-100 imgCarousel" alt="..." />
+
+              <div className="text-dark d-none d-md-block carousel-caption">
+                <p><span className="custom-title fw-bold">{t("carousel1")}</span> <br /> {t("carousel1suite")} <br /> {t("carousel1suite2")}
+                </p>
+              </div>
+
+              <div className="text-dark d-md-none carousel-caption">
+                <p><span className="custom-title fw-bold">{t("carousel1")}</span> <br /> {t("carousel1suite")}
+                </p>
+              </div>
+
+            </div>
+            <div className="carousel-item active" data-bs-interval="5000">
+              <img src="/manwithlaptopz.jpg" className="d-block w-100 imgCarousel" alt="..." />
+
+              <div className="text-dark d-none d-md-block carousel-caption ">
+                <p><span className="custom-title fw-bold">{t("carousel2")}</span> <br /> {t("carousel2suite")}</p>
+              </div>
+
+              <div className="text-dark d-md-none carousel-caption ">
+                <p><span className="custom-title fw-bold">{t("carousel2")}</span> <br /> {t("carousel2mobile")}</p>
+              </div>
+
+            </div>
+            <div className="carousel-item " data-bs-interval="5000">
+              <img src="/carousel3z.jpg" className="d-block w-100 imgCarousel" alt="..." />
+
+              <div className="text-dark d-none d-md-block carousel-caption">
+                <p><span className="custom-title fw-bold">{t("carousel3")}</span> <br /> {t("carousel3suite")} <br /> {t("carousel3suite2")}
+                </p>
+              </div>
+
+              <div className="text-dark d-md-none carousel-caption">
+                <p><span className="custom-title fw-bold">{t("carousel3")}</span> <br /> {t("carousel3mobile")}
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
