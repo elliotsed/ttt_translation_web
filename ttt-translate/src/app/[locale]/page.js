@@ -417,7 +417,7 @@ export default async function Home({ params: { locale } }) {
                     </svg>
                   </div>
                   <p className="mb-0 mt-2 fst-italic">
-                    {t("ceoWords")}
+                    {t("ceoWords")}.
                   </p>
                   <footer className="blockquote-footer pt-4 mt-4 border-top">
                     Léon Bichat |
