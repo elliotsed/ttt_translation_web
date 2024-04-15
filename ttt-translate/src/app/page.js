@@ -640,9 +640,7 @@ export default function Home() {
             <div className="row d-flex align-items-center">
               <div className="col-md-7 col-lg-8 text-center text-md-start">
                 <div className="p-3">
-                  © 2024 Copyright:
-                  <a className="text-white" style={{ textDecoration: "none" }} target="_blank"
-                    href="https://tttmission.vercel.app">TTT English Mission</a>
+                  © 2024 Copyright - TTT English Mission
                 </div>
               </div>
 

@@ -550,9 +550,7 @@ export default async function Home({ params: { locale } }) {
               <div className="row d-flex align-items-center">
                 <div className="col-md-7 col-lg-8 text-center text-md-start">
                   <div className="p-3">
-                    © 2024 Copyright:
-                    <a className="text-white" style={{ textDecoration: "none" }} target="_blank"
-                      href="#">TTT English Mission</a>
+                    © 2024 Copyright - TTT English Mission
                   </div>
                 </div>
 
