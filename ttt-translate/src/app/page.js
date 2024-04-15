@@ -101,7 +101,7 @@ export default function Home() {
 
         <div className="carousel-inner" style={{ marginTop: "96px" }}>
           <div className="carousel-item active" data-bs-interval="5000">
-            <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
+            <img src="/co-travailleurz.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark d-none d-md-block carousel-caption">
               <p><span className="custom-title fw-bold">Highly Professional</span> <br /> Translation Services <br /> You Can Trust
@@ -115,7 +115,7 @@ export default function Home() {
 
           </div>
           <div className="carousel-item" data-bs-interval="5000">
-            <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
+            <img src="/manwithlaptopz.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark d-none d-md-block carousel-caption ">
               <p><span className="custom-title fw-bold">Open Your Business</span> <br /> To The Whole World</p>
@@ -127,7 +127,7 @@ export default function Home() {
 
           </div>
           <div className="carousel-item " data-bs-interval="5000">
-            <img src="/carousel3.jpg" className="d-block w-100 imgCarousel" alt="..." />
+            <img src="/carousel3z.jpg" className="d-block w-100 imgCarousel" alt="..." />
 
             <div className="text-dark d-none d-md-block carousel-caption">
               <p><span className="custom-title fw-bold">Work Easily</span> <br /> With Our Professional <br /> Translation Agency
