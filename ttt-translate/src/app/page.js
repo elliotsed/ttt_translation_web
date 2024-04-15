@@ -97,7 +97,64 @@ export default function Home() {
 
 
       {/*Carousel Start*/}
-      <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide">
+      <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide d-md-none">
+
+        <div className="carousel-inner" style={{ marginTop: "96px" }}>
+          <div className="carousel-item active" data-bs-interval="5000">
+            <img src="/co-travailleur.jpg" className="d-block w-100 imgCarousel" alt="..." />
+
+            <div className="text-dark d-none d-md-block carousel-caption">
+              <p><span className="custom-title fw-bold">Highly Professional</span> <br /> Translation Services <br /> You Can Trust
+              </p>
+            </div>
+
+            <div className="text-dark d-md-none carousel-caption">
+              <p><span className="custom-title fw-bold">Highly Professional</span> <br /> Translation Services
+              </p>
+            </div>
+
+          </div>
+          <div className="carousel-item" data-bs-interval="5000">
+            <img src="/manwithlaptop.jpg" className="d-block w-100 imgCarousel" alt="..." />
+
+            <div className="text-dark d-none d-md-block carousel-caption ">
+              <p><span className="custom-title fw-bold">Open Your Business</span> <br /> To The Whole World</p>
+            </div>
+
+            <div className="text-dark d-md-none carousel-caption ">
+              <p><span className="custom-title fw-bold">Open Your Business</span> <br /> To The World</p>
+            </div>
+
+          </div>
+          <div className="carousel-item " data-bs-interval="5000">
+            <img src="/carousel3.jpg" className="d-block w-100 imgCarousel" alt="..." />
+
+            <div className="text-dark d-none d-md-block carousel-caption">
+              <p><span className="custom-title fw-bold">Work Easily</span> <br /> With Our Professional <br /> Translation Agency
+              </p>
+            </div>
+
+            <div className="text-dark d-md-none carousel-caption">
+              <p><span className="custom-title fw-bold">Work Easily</span> <br /> With Our Agency
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+
+      </div>
+
+      <div id="carouselExampleAutoplaying" data-bs-ride="carousel" className="carousel slide d-none d-md-block">
 
         <div className="carousel-inner" style={{ marginTop: "96px" }}>
           <div className="carousel-item active" data-bs-interval="5000">
